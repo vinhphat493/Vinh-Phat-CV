@@ -1,0 +1,95 @@
+#myCarousel{
+    overflow: hidden;
+    .carousel{
+        .carousel-inner {
+            img{
+                width: 100%;
+                height: 100%;
+            }
+            .carousel-caption{
+                margin: 0 auto;
+                padding-top: $pd-8;
+                padding-left: $pd-7;
+                width: 100%;
+                height: 500px;
+                text-align: left;
+                top:50%;
+                left: 50%;
+                transform:    translate(-50%,-50%)                         ;
+                -webkit-transform:    translate(-50%,-50%)                         ;
+                -moz-transform:    translate(-50%,-50%)                         ;
+                -ms-transform:    translate(-50%,-50%)                         ;
+                -o-transform:    translate(-50%,-50%)                         ;
+                &:hover{
+                    cursor: pointer;
+                }
+                h2>a{
+                    font-size: $fs-7;
+                    color: $color-white;
+                    &:hover{
+                        text-decoration: none;
+                    }
+                }
+                p>a{
+                    @include text($color-white,$fs-4,$fw-bold);
+                    span{
+                        margin-right: $mg-2;
+                        font-size: $fs-4;
+                    }
+                    i{
+                        display: inline-block;
+                        font-weight: bold;
+                        border: 1px solid $color-white;
+                        padding: $pd-a $pd-0;
+                        border-radius:   50%                  ;
+                        -webkit-border-radius:   50%                  ;
+                        -moz-border-radius:   50%                  ;
+                        -ms-border-radius:   50%                  ;
+                        -o-border-radius:   50%                  ;
+                    } 
+                    &:hover{
+                        text-decoration: none;
+                        color: $color-navy;
+                        i{
+                            background-color: $color-navy;
+                            color:$color-black;
+                            border-color: $color-navy;
+                        }
+                    }  
+                }
+            }
+        }
+        .carousel-control-prev{
+            transition:all 0.3s;
+            transform: translateX(-100px)        ;
+            -webkit-transform: translateX(-100px)        ;
+            -moz-transform: translateX(-100px)        ;
+            -ms-transform: translateX(-100px)        ;
+            -o-transform: translateX(-100px)        ;
+            -webkit-transition:all 0.3s;
+            -moz-transition:all 0.3s;
+            -ms-transition:all 0.3s;
+            -o-transition:all 0.3s;
+}
+        .carousel-control-next{
+            transition:all 0.3s;
+            transform: translateX(100px)        ;
+            -webkit-transform: translateX(100px)        ;
+            -moz-transform: translateX(100px)        ;
+            -ms-transform: translateX(100px)        ;
+            -o-transform: translateX(100px)        ;
+            -webkit-transition:all 0.3s;
+            -moz-transition:all 0.3s;
+            -ms-transition:all 0.3s;
+            -o-transition:all 0.3s;
+}
+        &:hover>.carousel-control-prev,
+        &:hover>.carousel-control-next{
+            transform: translateX(0)        ;
+            -webkit-transform: translateX(0)        ;
+            -moz-transform: translateX(0)        ;
+            -ms-transform: translateX(0)        ;
+            -o-transform: translateX(0)        ;
+        }
+    }
+}

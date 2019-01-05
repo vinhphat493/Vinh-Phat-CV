@@ -1,0 +1,84 @@
+#vehicles{
+    display: none;
+    .vehicles-nav{
+        background-color: $color-light;
+        padding: $pd-1 $pd-1 $pd-0 $pd-1;
+        border-bottom: 1px solid $color-dark;
+        .nav-link{
+            padding: $pd-0 $pd-1;
+            @include text($color-blue,$fs-3,$fw-bold-500);
+            position: relative;
+            &::before{
+                content: "";
+                position: absolute;
+                top: 100%;
+                left: 0;
+                height: 4px;
+                width: 0;
+                background-color: $color-blue;
+                transition: all 0.3s linear;
+                -webkit-transition: all 0.3s linear  ;
+                -moz-transition: all 0.3s linear  ;
+                -ms-transition: all 0.3s linear  ;
+                -o-transition: all 0.3s linear  ;
+            }
+            &:hover::before{
+                width: 100%;
+            }             
+        }
+    }
+    #vehicles-list{
+        text-align: center;
+        max-height: 220px;
+        overflow: scroll;
+        .vehicles-product-row{
+            padding-bottom: $pd-8;
+            background-color: $color-white;
+            display: none;
+            .vehicles-product{
+                padding: $pd-3 $pd-4;
+                .vehicles-product-item{
+                    a{
+                        text-decoration: none;
+                        color : $color-blue;
+                        p{
+                            font-size: $fs-3;
+                            font-weight: bold;
+                            text-transform: uppercase;
+                            margin-top: $mg-2;
+                            margin-bottom: $mg-0;
+                        }
+                        .car-item-price{
+                            color: $color-dark;
+                            sup{
+                                color: $color-blue!important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .vehicles-cars-btn{
+            border-top: 1px solid $color-dark;
+            padding: $pd-3 $pd-8 $pd-3 $pd-1;
+            background-color: $color-white;
+        }
+    }
+     
+    
+}
+.vehicles-child{
+    display: block!important;
+}  
+
+.activeNav{
+    color: $color-navy!important;
+    &::before{
+        width: 100%!important;
+        background-color: $color-navy!important;
+    }
+}
+
+.activeProduct{
+    display: flex!important;
+}

@@ -1,0 +1,79 @@
+.btn-light-white{
+    padding: $pd-1 $pd-4;
+    background-color: $color-white;
+    border: 1px solid $color-blue;
+    @include text($color-blue,$fs-4,$fw-bold-500);
+    margin: $mg-2;
+    &:hover{
+        border-color: $color-dark;
+        color: $color-dark;
+    }
+}
+
+.btn-blue{
+    padding: $pd-1 $pd-8;
+    background-color: $color-blue;
+    border-color: $color-blue;
+    color:$color-white;
+    font-size: $fs-3;
+    letter-spacing: 2px;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    &:hover{
+        text-decoration: none;
+        background-color: $color-white;
+        border-color: $color-navy;
+        color:$color-navy;
+    }
+}
+
+.btn-dropdown-text{
+    background-color: transparent;
+    font-size: $fs-3;
+    color: $color-blue;
+    width: 100%;
+    border-radius: 0    ;
+    -webkit-border-radius: 0    ;
+    -moz-border-radius: 0    ;
+    -ms-border-radius: 0    ;
+    -o-border-radius: 0    ;
+    i
+    {
+        margin-left: $mg-1;
+        font-size: $fs-4;
+    }
+    &:hover{
+        color:$color-navy
+    }
+}
+
+.btn-returnTop{
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    background-color: $color-opacity-dark;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition:   all .5 ;
+    -webkit-transition:   all .5 ;
+    -moz-transition:   all .5 ;
+    -ms-transition:   all .5 ;
+    -o-transition:   all .5 ;
+    i{
+        @include text($color-white,$fs-4,$fw-bold-500);
+        @extend .group_absolute;
+    }
+    &:hover{
+        box-shadow: 0px 0px 2px $color-white;
+        opacity: 0.5;
+    }
+}

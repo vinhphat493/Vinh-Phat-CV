@@ -1,0 +1,1845 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Ford - News Cars</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- CSS Animation -->
+    <link rel="stylesheet" href="css/animate.min.css">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
+        crossorigin="anonymous">
+    <!-- My CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Begin header -->
+    <header class="header fixed-top">
+        <div class="container-fluid px-5">
+            <nav class="navbar navbar-expand-md">
+                <a class="navbar-brand" href="#">
+                    <span class="logo-img"></span>
+                    <span class="logo-text">Go Further</span>
+                </a>
+                <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <!-- <span class="navbar-toggler-icon"></span> -->
+                    <i class="fa fa-align-justify"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav navbar-left mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" id="navVehicles" href="#" onclick="clickOpen()">Vehicles</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Shop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Finance</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Owner</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav navbar-right ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span>
+                                    <i class="fa fa-map-marker"></i>
+                                </span>
+                                <span>Locate a Dealer</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span>
+                                    <i class="fa fa-user-circle"></i>
+                                </span>
+                                <span>Sign in</span>
+
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span>
+                                    <i class="fa fa-search"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span>
+                                    <i class="fa fa-globe"></i>
+                                </span>
+                                <span>English</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <!-- Vehicles-navbar-child -->
+        <section id="vehicles">
+            <div class="container-fluid px-0" id="vehicles-content">
+                <div class="row">
+                    <div class="col">
+                        <nav class="vehicles-nav">
+                            <ul class="nav justify-content-center">
+                                <li class="nav-item">
+                                    <a class="nav-link" onclick="LayID(this.id)" id="vehicles-Cars" href="#">Cars</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" onclick="LayID(this.id)" id="vehicles-Suv" href="#">SUVs & Crossovers</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" onclick="LayID(this.id)" id="vehicles-Trucks" href="#">Trucks & Vans</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" onclick="LayID(this.id)" id="vehicles-Hybrids" href="#">Hybrids & EVs</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" onclick="LayID(this.id)" id="vehicles-Com" href="#">Commercial Vehicles</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" onclick="LayID(this.id)" id="vehicles-Per" href="#">Performance Vehicles</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" onclick="LayID(this.id)" id="vehicles-Future" href="#">Future Vehicles</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="container-fluid" id="vehicles-list">
+                    <div class="row vehicles-product-row" id="Cars">
+                        <div class="col-6 col-md-2 vehicles-product">
+                            <div class="vehicles-product-item">
+                                <a href="#" class="item-link">
+                                    <img src="img/car_1.png" alt="car1" class="img-fluid">
+                                    <p>2018 Fiesta</p>
+                                    <div class="car-item-price">
+                                        <span>Starting at</span>
+                                        <span>$14,205
+                                            <sup>1</sup>
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-md-2 vehicles-product">
+                            <div class="vehicles-product-item">
+                                <a href="#" class="item-link">
+                                    <img src="img/car_2.png" alt="car1" class="img-fluid">
+                                    <p>2018 Ford Focus</p>
+                                    <div class="car-item-price">
+                                        <span>Starting at</span>
+                                        <span>$17,950
+                                            <sup>1</sup>
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-2 vehicles-product">
+                            <div class="vehicles-product-item">
+                                <a href="#" class="item-link">
+                                    <img src="img/car_3.png" alt="car1" class="img-fluid">
+                                    <p>2018 Ford Fusion</p>
+                                    <div class="car-item-price">
+                                        <span>Starting at</span>
+                                        <span>$22,215
+                                            <sup>1</sup>
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-2 vehicles-product">
+                            <div class="vehicles-product-item">
+                                <a href="#" class="item-link">
+                                    <img src="img/car_4.png" alt="car1" class="img-fluid">
+                                    <p>2018 C-MAX</p>
+                                    <div class="car-item-price">
+                                        <span>Starting at</span>
+                                        <span>$24,120
+                                            <sup>1</sup>
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-2 vehicles-product">
+                            <div class="vehicles-product-item">
+                                <a href="#" class="item-link">
+                                    <img src="img/car_5.png" alt="car1" class="img-fluid">
+                                    <p>2019 Ford Mustang</p>
+                                    <div class="car-item-price">
+                                        <span>Starting at</span>
+                                        <span>$26,120
+                                            <sup>1</sup>
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-2 vehicles-product">
+                            <div class="vehicles-product-item">
+                                <a href="#" class="item-link">
+                                    <img src="img/car_6.png" alt="car1" class="img-fluid">
+                                    <p>2018 Ford Taurus</p>
+                                    <div class="car-item-price">
+                                        <span>Starting at</span>
+                                        <span>$27,690
+                                            <sup>1</sup>
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row vehicles-product-row" id="SUVs">
+                        <div class="col-6 col-md-2 vehicles-product">
+                            <div class="vehicles-product-item">
+                                <a href="#" class="item-link">
+                                    <img src="img/suv_1.png" alt="car1" class="img-fluid">
+                                    <p>2018 Ford EcoSport</p>
+                                    <div class="car-item-price">
+                                        <span>Starting at</span>
+                                        <span>$19,995
+                                            <sup>1</sup>
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-md-2 vehicles-product">
+                            <div class="vehicles-product-item">
+                                <a href="#" class="item-link">
+                                    <img src="img/suv_2.png" alt="car1" class="img-fluid">
+                                    <p>2018 Ford Escape</p>
+                                    <div class="car-item-price">
+                                        <span>Starting at</span>
+                                        <span>$23,940
+                                            <sup>1</sup>
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-md-2 vehicles-product">
+                            <div class="vehicles-product-item">
+                                <a href="#" class="item-link">
+                                    <img src="img/suv_3.png" alt="car1" class="img-fluid">
+                                    <p>2018 TRANSIT CONNECT WAGON</p>
+                                    <div class="car-item-price">
+                                        <span>Starting at</span>
+                                        <span>$25,900
+                                            <sup>1</sup>
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-md-2 vehicles-product">
+                            <div class="vehicles-product-item">
+                                <a href="#" class="item-link">
+                                    <img src="img/suv_4.png" alt="car1" class="img-fluid">
+                                    <p>2018 Ford Edge</p>
+                                    <div class="car-item-price">
+                                        <span>Starting at</span>
+                                        <span>$29,315
+                                            <sup>1</sup>
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-md-2 vehicles-product">
+                            <div class="vehicles-product-item">
+                                <a href="#" class="item-link">
+                                    <img src="img/suv_5.png" alt="car1" class="img-fluid">
+                                    <p>2019 Ford Flex</p>
+                                    <div class="car-item-price">
+                                        <span>Starting at</span>
+                                        <span>$30,575
+                                            <sup>1</sup>
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-md-2 vehicles-product">
+                            <div class="vehicles-product-item">
+                                <a href="#" class="item-link">
+                                    <img src="img/suv_6.png" alt="car1" class="img-fluid">
+                                    <p>2018 Ford Taurus</p>
+                                    <div class="car-item-price">
+                                        <span>Starting at</span>
+                                        <span>$32,140
+                                            <sup>1</sup>
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-md-2 vehicles-product">
+                            <div class="vehicles-product-item">
+                                <a href="#" class="item-link">
+                                    <img src="img/suv_7.png" alt="car1" class="img-fluid">
+                                    <p>2018 Expedition</p>
+                                    <div class="car-item-price">
+                                        <span>Starting at</span>
+                                        <span>$51,790
+                                            <sup>1</sup>
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row vehicles-product-row" id="Trucks">
+                        <div class="col-6 col-md-2 vehicles-product">
+                            <div class="vehicles-product-item">
+                                <a href="#" class="item-link">
+                                    <img src="img/truc_1.png" alt="car1" class="img-fluid">
+                                    <p>2018 Transit Connect</p>
+                                    <div class="car-item-price">
+                                        <span>Starting at</span>
+                                        <span>$23,215
+                                            <sup>1</sup>
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-md-2 vehicles-product">
+                            <div class="vehicles-product-item">
+                                <a href="#" class="item-link">
+                                    <img src="img/truc_2.png" alt="car1" class="img-fluid">
+                                    <p>2018 F-150</p>
+                                    <div class="car-item-price">
+                                        <span>Starting at</span>
+                                        <span>$27,705
+                                            <sup>1</sup>
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-md-2 vehicles-product">
+                            <div class="vehicles-product-item">
+                                <a href="#" class="item-link">
+                                    <img src="img/truc_3.png" alt="car1" class="img-fluid">
+                                    <p>2018 TRANSIT PASSENGER WAGON</p>
+                                    <div class="car-item-price">
+                                        <span>Starting at</span>
+                                        <span>$32,380
+                                            <sup>1</sup>
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-md-2 vehicles-product">
+                            <div class="vehicles-product-item">
+                                <a href="#" class="item-link">
+                                    <img src="img/truc_4.png" alt="car1" class="img-fluid">
+                                    <p>2018 Ford SuperDuty</p>
+                                    <div class="car-item-price">
+                                        <span>Starting at</span>
+                                        <span>$33,150
+                                            <sup>1</sup>
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row vehicles-product-row" id="Hybrids">
+                        <div class="col-6 col-md-2 vehicles-product">
+                            <div class="vehicles-product-item">
+                                <a href="#" class="item-link">
+                                    <img src="img/hybrid_1.png" alt="car1" class="img-fluid">
+                                    <p>2018 C-MAX Hybrid SE</p>
+                                    <div class="car-item-price">
+                                        <span>Starting at</span>
+                                        <span>$24,120
+                                            <sup>1</sup>
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-md-2 vehicles-product">
+                            <div class="vehicles-product-item">
+                                <a href="#" class="item-link">
+                                    <img src="img/hybrid_2.png" alt="car1" class="img-fluid">
+                                    <p>2018 Ford Fusion Hybrid SE</p>
+                                    <div class="car-item-price">
+                                        <span>Starting at</span>
+                                        <span>$26,340
+                                            <sup>1</sup>
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-md-2 vehicles-product">
+                            <div class="vehicles-product-item">
+                                <a href="#" class="item-link">
+                                    <img src="img/hybrid_3.png" alt="car1" class="img-fluid">
+                                    <p>2018 Focus Electric</p>
+                                    <div class="car-item-price">
+                                        <span>Starting at</span>
+                                        <span>$29,120
+                                            <sup>1</sup>
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-md-2 vehicles-product">
+                            <div class="vehicles-product-item">
+                                <a href="#" class="item-link">
+                                    <img src="img/hybrid_4.png" alt="car1" class="img-fluid">
+                                    <p>2018 Ford Fusion Energi SE</p>
+                                    <div class="car-item-price">
+                                        <span>Starting at</span>
+                                        <span>$31,400
+                                            <sup>1</sup>
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row vehicles-product-row" id="Commercial">
+                        <div class="col-6 col-md-2 vehicles-product">
+                            <div class="vehicles-product-item">
+                                <a href="#" class="item-link">
+                                    <img src="img/com_1.png" alt="car1" class="img-fluid">
+                                    <p>2018 Transit Connect Commercial</p>
+                                    <div class="car-item-price">
+                                        <span>Starting at</span>
+                                        <span>$23,215
+                                            <sup>1</sup>
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-md-2 vehicles-product">
+                            <div class="vehicles-product-item">
+                                <a href="#" class="item-link">
+                                    <img src="img/com_2.png" alt="car1" class="img-fluid">
+                                    <p>2019 Stripped Chassis</p>
+                                    <div class="car-item-price">
+                                        <span>Starting at</span>
+                                        <span>$28,425
+                                            <sup>1</sup>
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-md-2 vehicles-product">
+                            <div class="vehicles-product-item">
+                                <a href="#" class="item-link">
+                                    <img src="img/com_3.png" alt="car1" class="img-fluid">
+                                    <p>2018 Ford Transit Chassis</p>
+                                    <div class="car-item-price">
+                                        <span>Starting at</span>
+                                        <span>$28,690
+                                            <sup>1</sup>
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-md-2 vehicles-product">
+                            <div class="vehicles-product-item">
+                                <a href="#" class="item-link">
+                                    <img src="img/com_4.png" alt="car1" class="img-fluid">
+                                    <p>2019 E-Series Cutaway</p>
+                                    <div class="car-item-price">
+                                        <span>Starting at</span>
+                                        <span>$31,385
+                                            <sup>1</sup>
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-md-2 vehicles-product">
+                            <div class="vehicles-product-item">
+                                <a href="#" class="item-link">
+                                    <img src="img/com_5.png" alt="car1" class="img-fluid">
+                                    <p>2018 Ford Transit Commercial</p>
+                                    <div class="car-item-price">
+                                        <span>Starting at</span>
+                                        <span>$32,380
+                                            <sup>1</sup>
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-md-2 vehicles-product">
+                            <div class="vehicles-product-item">
+                                <a href="#" class="item-link">
+                                    <img src="img/com_6.png" alt="car1" class="img-fluid">
+                                    <p>2018 Ford SuperDuty Commercial</p>
+                                    <div class="car-item-price">
+                                        <span>Starting at</span>
+                                        <span>$33,150
+                                            <sup>1</sup>
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-md-2 vehicles-product">
+                            <div class="vehicles-product-item">
+                                <a href="#" class="item-link">
+                                    <img src="img/com_7.png" alt="car1" class="img-fluid">
+                                    <p>2018 Ford Chassis Cab</p>
+                                    <div class="car-item-price">
+                                        <span>Starting at</span>
+                                        <span>$33,700
+                                            <sup>1</sup>
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-md-2 vehicles-product">
+                            <div class="vehicles-product-item">
+                                <a href="#" class="item-link">
+                                    <img src="img/com_8.png" alt="car1" class="img-fluid">
+                                    <p>2019 Ford F-650-750</p>
+                                    <div class="car-item-price">
+                                        <span>Starting at</span>
+                                        <span>$57,515
+                                            <sup>1</sup>
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row vehicles-product-row" id="Performance">
+                        <div class="col-6 col-md-2 vehicles-product">
+                            <div class="vehicles-product-item">
+                                <a href="#" class="item-link">
+                                    <img src="img/per_1.png" alt="car1" class="img-fluid">
+                                    <p>2018 Fiesta ST</p>
+                                    <div class="car-item-price">
+                                        <span>Starting at</span>
+                                        <span>$21,285
+                                            <sup>1</sup>
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-md-2 vehicles-product">
+                            <div class="vehicles-product-item">
+                                <a href="#" class="item-link">
+                                    <img src="img/per_2.png" alt="car1" class="img-fluid">
+                                    <p>2018 Focus ST</p>
+                                    <div class="car-item-price">
+                                        <span>Starting at</span>
+                                        <span>$25,170
+                                            <sup>1</sup>
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-md-2 vehicles-product">
+                            <div class="vehicles-product-item">
+                                <a href="#" class="item-link">
+                                    <img src="img/per_3.png" alt="car1" class="img-fluid">
+                                    <p>2018 Focus RS</p>
+                                    <div class="car-item-price">
+                                        <span>Starting at</span>
+                                        <span>$41,120
+                                            <sup>1</sup>
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-md-2 vehicles-product">
+                            <div class="vehicles-product-item">
+                                <a href="#" class="item-link">
+                                    <img src="img/per_4.png" alt="car1" class="img-fluid">
+                                    <p>2018 F-150 Raptor</p>
+                                    <div class="car-item-price">
+                                        <span>Starting at</span>
+                                        <span>$50,675
+                                            <sup>1</sup>
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-md-2 vehicles-product">
+                            <div class="vehicles-product-item">
+                                <a href="#" class="item-link">
+                                    <img src="img/per_5.png" alt="car1" class="img-fluid">
+                                    <p>2018 MUSTANG SHELBY GT350®</p>
+                                    <div class="car-item-price">
+                                        <span>Starting at</span>
+                                        <span>$57,240
+                                            <sup>1</sup>
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-md-2 vehicles-product">
+                            <div class="vehicles-product-item">
+                                <a href="#" class="item-link">
+                                    <img src="img/per_6.png" alt="car1" class="img-fluid">
+                                    <p>Ford GT</p>
+                                    <div class="car-item-price">
+                                        <span></span>
+                                        <span>
+                                            <sup></sup>
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row vehicles-product-row" id="Future">
+                        <div class="col-6 col-md-2 vehicles-product">
+                            <div class="vehicles-product-item">
+                                <a href="#" class="item-link">
+                                    <img src="img/future_1.png" alt="car1" class="img-fluid">
+                                    <p>2019 Transit ConnectE</p>
+                                    <div class="car-item-price">
+                                        <span></span>
+                                        <span>
+                                            <sup></sup>
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-md-2 vehicles-product">
+                            <div class="vehicles-product-item">
+                                <a href="#" class="item-link">
+                                    <img src="img/future_2.png" alt="car1" class="img-fluid">
+                                    <p>2019 Ranger</p>
+                                    <div class="car-item-price">
+                                        <span></span>
+                                        <span>
+                                            <sup></sup>
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-md-2 vehicles-product">
+                            <div class="vehicles-product-item">
+                                <a href="#" class="item-link">
+                                    <img src="img/future_3.png" alt="car1" class="img-fluid">
+                                    <p>2019 EDGE</p>
+                                    <div class="car-item-price">
+                                        <span></span>
+                                        <span>
+                                            <sup></sup>
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-md-2 vehicles-product">
+                            <div class="vehicles-product-item">
+                                <a href="#" class="item-link">
+                                    <img src="img/future_4.png" alt="car1" class="img-fluid">
+                                    <p>Bronco</p>
+                                    <div class="car-item-price">
+                                        <span></span>
+                                        <span>
+                                            <sup></sup>
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row vehicles-cars-btn justify-content-end">
+                        <a href="#" class="btn btn-light-white">Certified Pre-Owned </a>
+                        <a href="#" class="btn btn-light-white">Explore All Vehicles </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Vehicles-navbar-child -->
+    </header>
+    <!-- Button returnTOp -->
+    <a href="#" class="btn-returnTop" onclick="topFunction()" id="myBtn" title="Go to top">
+        <i class="fa fa-angle-up"></i>
+    </a>
+    <!-- Button returnTOp -->
+    <!-- End header -->
+
+    <!-- Begin Carousel -->
+    <section id="myCarousel">
+        <div id="demo" class="carousel slide" data-ride="carousel" data-interval="500000">
+            <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+            </ul>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./img/slider1.jpeg" alt="Los Angeles">
+                    <div class="carousel-caption">
+                        <h2>
+                            <a href="#">We all drive. Some of us keep coming back for style.</a>
+                        </h2>
+                        <p>
+                            <a href="#" class="link-hover">
+                                <span>2018 Focus</span>
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/slider2.jpeg" alt="Chicago">
+                    <div class="carousel-caption">
+                        <h2>
+                            <a href="#">We all drive. Some of us do double takes.</a>
+                        </h2>
+                        <p>
+                            <a href="#" class="link-hover">
+                                <span>2018 Fusion</span>
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/slider3.jpeg" alt="New York">
+                    <div class="carousel-caption">
+                        <h2>
+                            <a href="#">We all drive. Some of us want to relive the fun.</a>
+                        </h2>
+                        <p>
+                            <a href="#" class="link-hover">
+                                <span>2018 Fiesta</span>
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                <span>
+                    <i class="fa fa-angle-left"></i>
+                </span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+                <span>
+                    <i class="fa fa-angle-right"></i>
+                </span>
+            </a>
+        </div>
+    </section>
+    <!-- End Carousel -->
+
+    <!-- Begin Introduct -->
+    <section id="myIntroduct">
+        <!-- Begin Intro-Version -->
+        <div class="intro-version">
+            <h1>Pick Up Right Where You Left Off</h1>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6">
+                        <a href="#" class="intro-version-item">
+                            <img src="img/vehicle.png" class="img-fluid" alt="vehicle">
+                            <p>Learn more about
+                                <span>2018 Fiesta</span>
+                            </p>
+                        </a>
+                    </div>
+                    <div class="col-md-6">
+                        <a href="#" class="intro-version-item">
+                            <img src="img/vehicle1.png" class="img-fluid" alt="vehicle">
+                            <p>Learn more about
+                                <span>2018 Fiesta</span>
+                            </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Intro-Version -->
+
+        <!-- Begin intro-deal -->
+        <div class="intro-deal">
+            <div class="container intro-deal-container">
+                <div class="row">
+                    <a href="#">
+                        <h1>Let Us Sweeten the Deal</h1>
+                        <p>SEE ALL OFFERS
+                            <span>
+                                <i class="fa fa-angle-right"></i>
+                            </span>
+                        </p>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+        <!-- End intro-deal -->
+
+        <!-- Begin Intro-build -->
+        <div class="intro-build">
+            <div class="intro-build-container">
+                <h2>Make it Yours</h2>
+                <a href="#" class="btn btn-blue">
+                    BUILD & PRICE
+                </a>
+            </div>
+        </div>
+        <!-- End Intro-build -->
+
+        <!-- Begin intro-function -->
+        <div class="intro-function">
+            <div class="container-fluid px-0">
+                <div class="row">
+                    <div class="col-md-9 px-0">
+                        <div class="intro-function-sologan">
+                            <h2>What's Happening at Ford</h2>
+                            <p>Stories and conversations featuring people and the Fords they love.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 px-0">
+                        <a href="#" class="intro-function-link">
+                            <div class="intro-function-item item-1">
+                                <img src="img/driver_asist.jpeg" class="img-fluid" alt="driver_asist">
+                                <div class="intro-function-item-link">
+                                    <span>Driver-Assist Technologies</span>
+                                    <span>
+                                        <i class="fa fa-angle-right"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 px-0">
+                        <a href="#" class="intro-function-link">
+                            <div class="intro-function-item item-2">
+                                <img src="img/learn_mode_about.jpeg" class="img-fluid" alt="learn_mode_about">
+                                <div class="intro-function-item-link">
+                                    <span>Learn More About Waze</span>
+                                    <span>
+                                        <i class="fa fa-angle-right"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-3 px-0">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <a href="#" class="intro-function-link">
+                                    <div class="intro-function-item item-1">
+                                        <img src="img/phone_app.jpeg" class="img-fluid" alt="driver_asist">
+                                        <div class="intro-function-item-link">
+                                            <span>Learn more</span>
+                                            <span>
+                                                <i class="fa fa-angle-right"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-12">
+                                <a href="#" class="intro-function-link">
+                                    <div class="intro-function-item item-1">
+                                        <img src="img/register_now.jpeg" class="img-fluid" alt="driver_asist">
+                                        <div class="intro-function-item-link">
+                                            <span>Register Now</span>
+                                            <span>
+                                                <i class="fa fa-angle-right"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 px-0">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <a href="#" class="intro-function-link">
+                                    <div class="intro-function-item item-1">
+                                        <img src="img/read_full_story.jpeg" class="img-fluid" alt="driver_asist">
+                                        <div class="intro-function-item-link">
+                                            <span>Read Full story</span>
+                                            <span>
+                                                <i class="fa fa-angle-right"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-12">
+                                <a href="#" class="intro-function-link">
+                                    <div class="intro-function-item item-1">
+                                        <img src="img/transit_summer.jpeg" class="img-fluid" alt="driver_asist">
+                                        <div class="intro-function-item-link">
+                                            <span>Learn more</span>
+                                            <span>
+                                                <i class="fa fa-angle-right"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End intro-function -->
+    </section>
+    <!-- End Introduct -->
+
+    <!-- Begin Footer -->
+    <footer id="footer">
+        <!-- Begin button-disclosures -->
+        <div class="disclosures">
+            <h1>
+                <button type="button" onclick="clickDisclosures()" id="btn-disclosures" class="btn btn-dropdown-text">
+                    DISCLOSURES
+                    <span>
+                        <i id="icon-disclosures" class="fa fa-angle-down"></i>
+                    </span>
+                </button>
+            </h1>
+            <div id="conDisclosures" class="disclosures-container animated">
+                <ul class="disclosures-text">
+                    <li>Note.
+                        <p>Information is provided on an "as is" basis and could include technical, typographical or other errors.
+                            Ford makes no warranties, representations, or guarantees of any kind, express or implied, including
+                            but not limited to, accuracy, currency, or completeness, the operation of the Site, the information,
+                            materials, content, availability, and products. Ford reserves the right to change product specifications,
+                            pricing and equipment at any time without incurring obligations. Your Ford dealer is the best
+                            source of the most up-to-date information on Ford vehicles.
+                            <br>
+
+                        </p>
+                    </li>
+                    <li>1.
+                        <p>MSRP for base vehicle shown excluding destination/delivery fee plus government fees and taxes, any
+                            finance charges, any dealer processing charge, any electronic filing charge, and any emission
+                            testing charge. Optional equipment not included.&nbsp; Starting A, Z and X Plan price is for
+                            qualified, eligible customers and excludes document fee, destination/delivery charge, taxes,
+                            title and registration. Not all vehicles qualify for A, Z or X Plan. All Mustang Shelby GT350
+                            and Shelby GT350R prices exclude gas guzzler tax.
+                            <br>
+                        </p>
+                    </li>
+                    <li>2.
+                        <p>EPA-estimated city/hwy mpg for the model indicated. See fueleconomy.gov for fuel economy of other
+                            engine/transmission combinations. Actual mileage will vary. On plug-in hybrid models and electric
+                            models, fuel economy is stated in MPGe. MPGe is the EPA equivalent measure of gasoline fuel efficiency
+                            for electric mode operation.
+                            <br>
+
+                        </p>
+                    </li>
+                    <li>3.
+                        <p>When properly equipped.
+                            <br>
+
+                        </p>
+                    </li>
+                    <li>4.
+                        <p>Option/Package price based on Manufacturer's Suggested Retail Price (MSRP) excluding taxes based
+                            on 5% APR Ford Credit financing financed over 60 months. Not all buyers will qualify for Ford
+                            Credit financing.
+                            <br>
+
+                        </p>
+                    </li>
+                    <li>6.
+                        <p>Special APR offers applied to Estimated Selling Price. Special APR offers require Ford Credit Financing.
+                            Not all buyers will qualify. See dealer for qualifications and complete details.
+                            <br>
+
+                        </p>
+                    </li>
+                    <li>7.
+                        <p>Special Lease offers applied to Estimated Capitalized Cost. Special Lease offers require Ford Credit
+                            Financing. Not all buyers will qualify. See dealer for qualifications and complete details.
+                            <br>
+                        </p>
+                    </li>
+                    <li>10.
+                        <p>Driver Assist Features are supplemental and do not replace the driver's attention, judgment and need
+                            to control the vehicle.
+                            <br>
+
+                        </p>
+                    </li>
+                    <li>15.
+                        <p>Classes are: Small Hybrid Vehicles (C-MAX Hybrid); Subcompact Cars (Fiesta); High-Performance Subcompact
+                            Cars (Fiesta ST); Small Sedans and Hatchbacks (Focus); High-Performance Small Cars (Focus ST);
+                            Small Electric Vehicles (Focus Electric); Midsize Sedans (Fusion); Midsize Hybrid Sedans (Fusion
+                            Hybrid); Midsize Plug-in Hybrid Sedans (Fusion Energi); Full-Size Sedans (Taurus); 300+ HP Sports
+                            Cars (Mustang); Small Utilities (Escape); Midsize Utilities (Edge); Large Utilities (Flex and
+                            Explorer); Extended Utilities (Expedition); Full-Size Pickups under 8,500 lbs. GVWR, Non-Hybrid
+                            (F-150); Full-Size Pickups over 8,500 lbs. GVWR (Super Duty); Full-Size Vans (Transit/E-Series);
+                            Small Cargo Vans (Transit Connect); 6-7 Classic Conventional Cabs (Medium Duty) based on Ford
+                            segmentation.
+                            <br>
+                        </p>
+                    </li>
+                    <li>20.
+                        <p>For dealer ordered vehicles, the vehicle has already been ordered by the dealer and is in the process
+                            of being manufactured by the factory. If you are interested in the vehicle marked "Dealer Ordered",
+                            contact the dealership for a delivery estimate.
+                            <br>
+
+                        </p>
+                    </li>
+                    <li>27.
+                        <p>SYNC
+                            <sup>®</sup> is an optional feature. Don't drive while distracted. Use voice-operated systems when
+                            possible; don't use handheld devices while driving. Some features may be locked out while the
+                            vehicle is in gear. Not all features are compatible with all phones. Message and data rates may
+                            apply. Optional Navigation System map updates cannot be received via Wi-fi® and require a separate
+                            update.
+                            <br>
+
+                        </p>
+                    </li>
+                    <li>28.
+                        <p>The vehicle's electrical system (including the battery), the wireless service provider's signal and
+                            a connected mobile phone must all be available and operating for 911 Assist to function properly.
+                            These systems may become damaged in a crash. The paired mobile phone must be connected to SYNC,
+                            and the 911 Assist feature enabled, in order for 911 to be dialed. When the feature is ON, 911
+                            Assist uses your paired and connected mobile phone to assist occupants to contact emergency services
+                            by dialing 911 if your airbag deploys or, on certain vehicles, if the emergency fuel pump shut-off
+                            is activated. Aftermarket on-board diagnostic devices may interfere with various vehicle systems
+                            including Vehicle Health Report and 911 Assist. To avoid interference, remove the device or contact
+                            the device maker for more information on compatibility.
+                            <br>
+
+                        </p>
+                    </li>
+                    <li>34.
+                        <p>Available Feature. SiriusXM audio and data services each require a subscription sold separately,
+                            or as a package, by Sirius XM Radio Inc. If you decide to continue service after your trial,
+                            the subscription plan you choose will automatically renew thereafter and you will be charged
+                            according to your chosen payment method at then-current rates. Fees and taxes apply. To cancel
+                            you must call SiriusXM at 1-866-635-2349. See SiriusXM Customer Agreement for complete terms
+                            at&nbsp;
+                            <a href="http://www.siriusxm.com/" tabindex="0">www.siriusxm.com</a>. All fees and programming subject to change. Sirius, XM and all related
+                            marks and logos are trademarks of Sirius XM Radio Inc.
+                        </p>
+                    </li>
+                    <li>39.
+                        <p>Remember that even advanced technology cannot overcome the laws of physics. It's always possible
+                            to lose control of a vehicle due to inappropriate driver input for the conditions.
+                            <br>
+
+                        </p>
+                    </li>
+                    <li>43.
+                        <p>Android is a trademark of Google Inc. iPhone®&nbsp;is a registered trademark of Apple Inc. The BlackBerry
+                            and RIM families of related marks, images and symbols are the exclusive properties and trademarks
+                            of Research In Motion Limited.
+                            <br>
+                        </p>
+                    </li>
+                    <li>48.
+                        <p>You must have a Bluetooth
+                            <sup>®</sup>-enabled phone paired to your SYNC
+                            <sup>®</sup> system. The Bluetooth word mark is a trademark of the Bluetooth SIG, Inc. HD Radio is
+                            a proprietary trademark of iBiquity Digital Corp. iPad
+                            <sup>®</sup>, iPod
+                            <sup>®</sup>, iTunes
+                            <sup>®</sup>, iPhone
+                            <sup>®</sup>, and Siri
+                            <sup>®</sup> are registered trademarks of Apple Inc. The term Wi-Fi
+                            <sup>®</sup> is a registered trademark of the Wi-Fi Alliance
+                            <sup>®</sup>. Optional Navigation System map updates cannot be received via wi-fi and require a separate
+                            update. Sony is a registered trademark of the Sony Corporation.
+                            <br>
+
+                        </p>
+                    </li>
+                    <li>52.
+                        <p>Google Maps is a trademark of Google, Inc. MapQuest is a trademark of AOL Inc.
+                            <br>
+
+                        </p>
+                    </li>
+                    <li>53.
+                        <p>PANDORA, the PANDORA logo, and the Pandora trade dress are trademarks or registered trademarks of
+                            Pandora Media, Inc. Used with permission. iHeartAuto is a registered trademark of Clear Channel
+                            Broadcasting, Inc. Slacker
+                            <sup>®</sup> is a registered trademark of Slacker
+                            <sup>®</sup>, Inc. Stitcher Smart Radio is a registered trademark of Stitcher, Inc. NPR and the NPR
+                            logo are registered trademarks of National Public Radio, Inc. Used with permission. Gracenote
+                            is a registered trademark of Gracenote, Inc.
+                            <br>
+
+                        </p>
+                    </li>
+                    <li>63.
+                        <p>SYNC
+                            <sup>®</sup> AppLink
+                            <sup>™</sup> is available on select models and compatible with select smartphone platforms. SYNC AppLink
+                            requires any compatible apps to be installed and running on a capable smartphone while connected
+                            to Ford SYNC. SYNC AppLink is not compatible with MyFord Touch. Commands may vary by phone and
+                            AppLink software.
+                            <br>
+
+                        </p>
+                    </li>
+                    <li>64.
+                        <p>20 Operator Assist sessions included with each one-year paid/complimentary SYNC Services subscription.
+                            Fees apply for additional sessions. See&nbsp;
+                            <a href="http://owner.ford.com/" tabindex="0">owner.Ford.com</a>.
+                        </p>
+                    </li>
+                    <li>68.
+                        <p>Horsepower and torque ratings achieved with 93-octane fuel.
+                            <br>
+
+                        </p>
+                    </li>
+                    <li>129.
+                        <p>SYNC Services varies by trim level and model year and may require a subscription. Traffic alerts
+                            and turn-by-turn directions available in select markets. Message and data rates may apply. Ford
+                            Motor Company reserves the right to change or discontinue this product service at any time without
+                            prior notification or incurring any future obligation.
+                            <br>
+
+                        </p>
+                    </li>
+                    <li>160.
+                        <p>Available feature. Don’t drive while distracted. Use voice-operated systems when possible; don’t
+                            use handheld devices while driving. Apple CarPlay is available on 2017 models with SYNC 3; owners
+                            of 2016 models with SYNC 3 are required to perform a software update and purchase a hardware
+                            upgrade through your dealer. Not available on 2016 model year Transit. Requires phone with compatible
+                            version of Apple iOS and active data service. SYNC 3 does not control Apple CarPlay while in
+                            use. Apple is solely responsible for their functionality. Message and data rates may apply. Apple,
+                            Apple CarPlay, iPhone, Apple Maps and Siri are trademarks of Apple Inc.
+                            <br>
+
+                        </p>
+                    </li>
+                    <li>161.
+                        <p>Requires phone with active data service and compatible software. SYNC 3 does not control 3rd party
+                            products while in use. 3rd Parties are solely responsible for their respective functionality.
+                            <br>
+
+                        </p>
+                    </li>
+                    <li>162.
+                        <p>SYNC Connect is an optional feature on select 2017 model year vehicles and includes service for five
+                            years from the vehicle sale date as recorded by the dealer. FordPass is available on the App
+                            Store
+                            <sup>®</sup> or Google Playtm. Message and data rates may apply. App Store is a service mark of Apple,
+                            Inc. Google Play is a trademark of Google, Inc.
+                            <br>
+
+                        </p>
+                    </li>
+                    <li>163.
+                        <p>FordPass, compatible with select smartphone platforms, is available via a download. Message and data
+                            rates may apply. SYNC
+                            <sup>®</sup> Connect, an optional feature on select 2017 model year vehicles, is required for certain
+                            features.
+                            <br>
+
+                        </p>
+                    </li>
+                    <li>164.
+                        <p>FordPass, compatible with select smartphone platforms, is available via a download. Message and data
+                            rates may apply.
+                            <br>
+
+                        </p>
+                    </li>
+                    <li>165.
+                        <p>SYNC
+                            <sup>®</sup> Connect, an optional feature on select 2017 model year vehicles, is required for certain
+                            features.
+                            <br>
+
+                        </p>
+                    </li>
+                    <li>166.
+                        <p>Roadside assistance is available to everyone. Fees may apply.
+                            <br>
+
+                        </p>
+                    </li>
+                    <li>167.
+                        <p>Apple and the Apple logo are trademarks of Apple Inc., registered in the U.S. and other countries.
+                            App Store is a service mark of Apple Inc. Android, Google Play and the Google Play logo are trademarks
+                            of Google Inc.
+                            <br>
+
+                        </p>
+                    </li>
+                    <li>168.
+                        <p>SYNC
+                            <sup>®</sup> Applink is compatible with select smartphone platforms and requires any compatible apps
+                            to be installed and running on a capable smartphone while connected to Ford SYNC. Commands may
+                            vary by phone and Applink software. Message and data rates may apply.
+                            <br>
+
+                        </p>
+                    </li>
+                    <li>169.
+                        <p>FordPass Park is available in select cities.
+                            <br>
+
+                        </p>
+                    </li>
+                    <li>170.
+                        <p>SYNC Connect includes service for five years from the vehicle sale date as recorded by the dealer.
+                            The Wi-Fi hotspot includes a trial subscription of three months or three gigabytes – whichever
+                            comes first. After the trial subscription, a wireless service plan is required for the Wi-Fi
+                            hotspot. FordPass
+                            <sup>™</sup> is available on the App Store
+                            <sup>®</sup> or Google Play
+                            <sup>™</sup>. Message and data rates may apply. App Store is a service mark of Apple, Inc. Google
+                            Play is a trademark of Google, Inc. Wi-Fi is a registered trademark of the Wi-Fi Alliance
+                            <sup>®</sup>.
+                            <br>
+
+                        </p>
+                    </li>
+                    <li>171.
+                        <p>SYNC 3/FordPass Connect are available features. Don’t drive while distracted. Use voice-operated
+                            systems when possible; don’t use handheld devices while driving. Some features may be locked
+                            out while the vehicle is in gear. Not all features are compatible with all phones. Wi-Fi requires
+                            FordPass Connect, which includes complimentary 1-year subscription for remote features, excluding
+                            Wi-Fi hotspot, and starts with vehicle sale date. Subscription is subject to compatible 4G network
+                            availability. Evolving technology/cellular networks may affect future functionality. Certain
+                            restrictions, third-party terms, or message/data rates may apply. Wi-Fi hotspot includes complimentary
+                            wireless data trial that begins upon AT&amp;T activation and expires at the end of 3 months or
+                            when 3GB of data is used, whichever comes first, but cannot extend beyond the complimentary subscription
+                            period for remote features. To activate, go to
+                            <u>
+                                <a href="http://www.att.com/ford" tabindex="0">www.att.com/ford</a>
+                            </u>. FordPass smartphone app is compatible with select smartphone platforms available via download.
+                            Google and logos are trademarks of Google Inc. App Store is a service mark of Apple Inc. Requires
+                            phone with active data service and compatible software. SYNC does not control third-party products
+                            while in use. Third parties are solely responsible for the respective functionality. Android
+                            Auto and logo are trademarks of Google Inc. Apple CarPlay is a trademark of Apple Inc., registered
+                            in the U.S. and other countries</p>
+                    </li>
+                    <li>172.
+                        <p>Track use only
+                            <br>
+                        </p>
+                    </li>
+                    <li>173.
+                        <p>Prices may vary depending on form of payment.
+                            <br>
+                        </p>
+                    </li>
+                    <li>174.
+                        <p>SYNC 3/SYNC Connect are available features. Don’t drive while distracted. Use voice-operated systems
+                            when possible; don’t use handheld devices while driving. Some features may be locked out while
+                            the vehicle is in gear. Not all features are compatible with all phones. Wi-Fi requires SYNC
+                            Connect, which includes complimentary 5-year subscription for remote features excluding Wi-Fi
+                            hotspot, and starts with vehicle sale date. Subscription is subject to compatible 4G network
+                            availability. Evolving technology/cellular networks may affect future functionality. Certain
+                            restrictions, 3rd-party terms, or message/data rates may apply. Wi-Fi hotspot includes complimentary
+                            wireless data trial that begins upon AT&amp;T activation and expires at the end of 3 months or
+                            when 3GB of data is used, whichever comes first, but cannot extend beyond the complimentary 5-year
+                            subscription period for remote features. To activate, go to www.att.com/ford. FordPass smartphone
+                            app is compatible with select smartphone platforms available via download.
+                            <br>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- End button-disclosures -->
+
+        <!-- Begin footer-narbar -->
+        <nav class="navbar-footer navbar navbar-expand navbar-light bg-faded">
+            <div class="container">
+                <form class="form-inline my-2 my-lg-0 navbar-footer-serach">
+                    <span>
+                        <i class="fa fa-search"></i>
+                    </span>
+                    <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                </form>
+
+                <ul class="navbar-nav mt-2 mt-lg-0 ml-auto">
+                    <li class="nav-item active">
+                        <span class="nav-link">Popular</span>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Focus</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Fiesta</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Mustang</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">F-150</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- End footer-navbar -->
+
+        <!-- Begin footer-body -->
+        <div class="footer-body">
+            <div class="container">
+                <div class="footer-body-list">
+                    <ul class="footer-body-list-item">
+                        <li>
+                            <span>All Vehicles</span>
+                            <ul class="footer-body-list-item-child">
+                                <li>
+                                    <a href="#">
+                                        Cars
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        SUVs & Crossovers
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Trucks & Vans
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Hybrids & EVs
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Commercial Vehicles
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Future Vehicles
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Certified Pre-Owned
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Fleet Vehicles
+
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        All Vehicles
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Performance Vehicles
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>Shopping Tools</span>
+                            <ul class="footer-body-list-item-child">
+                                <li>
+                                    <a href="#">
+                                        Build & Price
+
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Search Inventory
+
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Get a Quote
+
+
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Pricing & Incentives
+
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Trade-In Value
+
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Get a Brochure
+
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Compare Vehicles
+
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Get Updates
+
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>Finance</span>
+                            <ul class="footer-body-list-item-child">
+                                <li>
+                                    <a href="#">
+                                        Finance Options
+
+
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Payment Calculator
+
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Credit Education
+
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Customer Support
+
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Apply Online
+
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        My Account
+
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Ford Interest Advantage
+
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Investor Center
+
+
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Ford Credit Careers
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>Owner</span>
+                            <ul class="footer-body-list-item-child">
+                                <li>
+                                    <a href="#">
+                                        Owner Home
+
+
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Schedule Service
+
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Your Warranty
+
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Service Coupons & Offers
+
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Redeem & Rebate
+
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        SYNC & Technology
+
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        SYNC Software Updates
+
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Owner Manuals
+
+
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Locate a Dealer
+
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Ford Parts
+
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Give Us a Call
+
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Roadside Assistance
+
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Ford Protect EXT SVC Plans
+
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Safety Recalls
+
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Airbag Recalls
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li>
+                            <span>Experience Ford</span>
+                            <ul class="footer-body-list-item-child">
+                                <li>
+                                    <a href="#">
+                                        Corporate
+
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Careers
+
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Investors
+
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Company News
+
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        About Ford
+
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Racing
+
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Accessories Store
+
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Warriors in Pink
+
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Ford Merchandise
+
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        SYNC
+
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Ford Pass
+
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Ford Social
+
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="clear-fix"></div>
+                </div>
+            </div>
+        </div>
+        <!-- End footer-body -->
+
+        <!-- Begin footer-end -->
+        <div class="footer-end">
+            <div class="footer-end-follow d-flex align-items-center">
+                <div class="container px-0">
+                    <nav class="navbar navbar-expand navbar-light">
+                        <div class="footer-end-follow-nav-left navbar-brand">
+                            <p>Follow Ford</p>
+                            <a class="nav-link" href="#">
+                                <span class="footer-end-follow-icon icon-0"></span>
+                            </a>
+                            <a class="nav-link" href="#">
+                                <span class="footer-end-follow-icon icon-1"></span>
+                            </a>
+                            <a class="nav-link" href="#">
+                                <span class="footer-end-follow-icon icon-2"></span>
+                            </a>
+                            <a class="nav-link" href="#">
+                                <span class="footer-end-follow-icon icon-3"></span>
+                            </a>
+                            <a class="nav-link" href="#">
+                                <span class="footer-end-follow-icon icon-4"></span>
+                            </a>
+                        </div>
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <span>
+
+                                    </span>
+                                    <span>GetUpdates</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <span>
+
+                                    </span>
+                                    <span>Share your thoughts about Ford.com</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="footer-end-info">
+                <div class="container px-0">
+                    <div class="change-language">
+                        <nav class="navbar navbar-expand">
+                            <a class="navbar-brand d-flex align-items-center" href="#">
+                                <span>
+                                    <i class="fa fa-globe"></i>
+                                </span>
+                                <span>
+                                    Change Language
+                                </span>
+                            </a>
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        <span class="footer-logo">
+                                        </span>
+                                        <span class="footer-logo-text">
+                                            Go Further
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="inFormation">
+                        <ul class="nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    © 2018 Ford Motor Company
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Site Map
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Glossary
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Site Feedback
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Contact Us
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Terms & Conditions
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Privacy
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Your CA Privacy Rights
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    AdChoices
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End footer-end -->
+    </footer>
+    <!-- End Footer -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
+        crossorigin="anonymous"></script>
+
+    <!-- Script Main -->
+    <script src="js/main.js"></script>
+
+    
+</body>
+
+</html>

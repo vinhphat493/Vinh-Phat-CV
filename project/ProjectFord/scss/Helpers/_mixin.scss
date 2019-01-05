@@ -1,0 +1,13 @@
+@mixin text($color,$font-size,$font-weight) {
+    color: $color;
+    font-size: $font-size;
+    font-weight: $font-weight;
+}
+
+@mixin bg-img($bg-position-x,$bg-position-y,$width,$height,$bg-size-w,$bg-size-h){
+    width: $width;
+    height: $height;
+    background-position: $bg-position-x $bg-position-y;
+    background-size: $bg-size-w $bg-size-h;
+}
+

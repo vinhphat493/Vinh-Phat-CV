@@ -1,0 +1,56 @@
+//CUSTOM CAROUSEL
+.carousel-indicators{
+    margin: 0;
+    padding-top: $pd-a;
+    line-height: 10px;
+    bottom: 30px;
+    li{
+        margin: 0 $mg-2;
+        height: 8px;
+        width: 8px;
+        border: 1px solid $color-white;
+        background-color: $color-light;
+        border-radius: 50%        ;
+        -webkit-border-radius: 50%        ;
+        -moz-border-radius: 50%        ;
+        -ms-border-radius: 50%        ;
+        -o-border-radius: 50%        ;
+    }
+    .active {
+        transform:scale(1.5,1.5);
+        border: 1px solid $color-white;
+        background-color: transparent;
+        line-height: 14px;
+        border-radius: 50%        ;
+        -webkit-border-radius: 50%        ;
+        -moz-border-radius: 50%        ;
+        -ms-border-radius: 50%        ;
+        -o-border-radius: 50%        ;
+        -webkit-transform:scale(1.5,1.5);
+        -moz-transform:scale(1.5,1.5);
+        -ms-transform:scale(1.5,1.5);
+        -o-transform:scale(1.5,1.5);
+    }
+}
+
+.carousel-control-prev {
+    width: 3%!important;
+    i{
+        @include text($color-white!important,$fs-9,$fw-normal!important);
+        display: inline-block;
+        padding: 0 $pd-3 0 $pd-3 ;
+        background-color: $color-opacity-dark;
+    }
+    &:hover i{
+        color: $color-blue!important;
+        background-color: $color-white;
+        cursor: pointer;
+    }
+}   
+
+.carousel-control-next{
+    @extend .carousel-control-prev;
+}
+
+
+

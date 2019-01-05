@@ -1,0 +1,26 @@
+@mixin button($color, $bg-color, $boder-radius, $hover-bg, $hover-color) {
+  @extend .btn;
+  color: $color!important;
+  background-color: $bg-color;
+  border-radius: $boder-radius;
+  &:hover {
+    background-color: $hover-bg;
+    color: $hover-color!important;
+  }
+}
+
+@mixin text($color, $fs, $fw) {
+  @extend .txt;
+  color: $color;
+  font-size: $fs;
+  font-weight: $fw;
+}
+@mixin background__img($data){
+  @extend .intro__img;
+  background-image: $data;
+}
+
+@mixin background__product($data){
+  @extend .product__item;
+  background-image: $data;
+}

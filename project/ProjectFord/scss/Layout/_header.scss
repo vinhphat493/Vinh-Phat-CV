@@ -1,0 +1,55 @@
+.header{
+    height: 80px;
+    background-color: $color-white;
+    border-bottom: 1px solid $color-dark;
+    .navbar-toggler{    
+        border-color: $color-blue;
+        vertical-align: middle;
+        @include text($color-blue,$fs-3,$fw-bold);
+        padding: $pd-0 $pd-1;
+    }
+    .navbar{
+        .navbar-brand{
+            text-align: center;
+            margin: 0;
+            padding-right: $pd-5;
+            line-height: $lh-1;
+            .logo-img{
+                background-image: url(../img/logo.png);
+                @include bg-img(600px,0,95px,40px,400px,200px);
+                display: inline-block;
+            }
+            .logo-text{
+                @include text($color-dark,$fs-2,$fw-bold);
+                display: block;
+    
+            }
+        }
+        .navbar-left{
+            .nav-link{
+                @include text($color-blue,$fs-3,$fw-bold-500);
+                padding: $pd-0 $pd-1;
+            }
+        }
+        .navbar-right{
+            .nav-item{
+                padding: 0 $pd-1;
+                .nav-link{
+                    color: $color-blue;
+                    span:first-child{
+                        vertical-align: middle;
+                        font-size: $fs-8;
+                        padding-right:$pd-0;
+                        font-weight: normal;
+                    }
+                }
+            }
+            
+        }
+    }
+}
+
+.click-border{
+    border: 1px solid $color-navy!important;
+    color: $color-navy!important;
+}
