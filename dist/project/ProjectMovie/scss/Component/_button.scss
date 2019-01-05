@@ -1,0 +1,22 @@
+.btnPage{
+    background-image: linear-gradient(90deg,#ff55a5 0%, #ff5860 100%);
+    @include text($colorWhite,1.6rem,bold);
+    padding: $pd-10 $pd-25;
+    margin-left: $mg-25;
+    opacity: 0.85;
+    text-transform: uppercase;
+    box-shadow: 0 0 20px 0 rgba(255,88,96,0.5);
+    border: 1px solid $colorPink;
+    transition: all 0.5s ;
+    -webkit-transition: all 0.5s ;
+    -moz-transition: all 0.5s ;
+    -ms-transition: all 0.5s ;
+    -o-transition: all 0.5s ;
+    &:hover{
+        opacity: 1;
+        color: $colorWhite;
+    }
+    &:active{
+        background-image:  $colorPinkGadient!important;
+    }
+}

@@ -1,0 +1,204 @@
+#footer{
+    margin-top: $mg-70;
+    padding: $pd-50 0;
+    position: relative;
+    &::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        height: 0.3rem;
+        width: 100%;
+        background-image: $colorPinkGadient;
+    } 
+    .footer-title{
+        @include text($colorWhite,$fs-13,600);
+        text-transform: uppercase;
+    } 
+    .footer__left{
+        padding-right: $pd-50;
+        .footer-item{
+            @include text ($colorText,$fs-13,500);
+            text-decoration: none;
+            display: block;
+            margin: $mg-10 0;
+            &:hover{
+                color: $colorPink;
+            }
+        }
+    }
+    .footer__middle{
+        .footer-table{
+            margin-top: $mg-10;
+            .footer-tr{
+                margin-bottom: $mg-10;
+                display: block;
+                td{
+                    padding-right: $pd-15;
+                    .footer-img{
+                        display: block;
+                        @extend .bgCoverNoHeight;
+                        height: 3rem;
+                        width: 3rem;
+                        background-size: contain;
+                    }
+                }
+            }
+            .footer-tr:first-child{
+                td:nth-child(1){
+                    .footer-img{
+                        background-image: url("../img/bhd.png")
+                    }
+                }
+                td:nth-child(2){
+                    .footer-img{
+                        background-image: url("../img/cgv.png")
+                    }
+                }
+                td:nth-child(3){
+                    .footer-img{
+                        background-image: url("../img/cinema.png")
+                    }
+                }
+                td:nth-child(4){
+                    .footer-img{
+                        background-image: url("../img/cinestar.png")
+                    }
+                }
+                td:nth-child(5){
+                    .footer-img{
+                        background-image: url("../img/dongdacinema.png")
+                    }
+                }
+            }
+            .footer-tr:nth-child(2){
+                td:nth-child(1){
+                    .footer-img{
+                        background-image: url("../img/galaxycine.png")
+                    }
+                }
+                td:nth-child(2){
+                    .footer-img{
+                        background-image: url("../img/lotte.png")
+                    }
+                }
+                td:nth-child(3){
+                    .footer-img{
+                        background-image: url("../img/megags.png")
+                    }
+                }
+                td:nth-child(4){
+                    .footer-img{
+                        background-image: url("../img/bt.jpg")
+                    }
+                }
+                td:nth-child(5){
+                    .footer-img{
+                        background-image: url("../img/123go.png")
+                    }
+                }
+            }
+            .footer-tr:nth-child(3){
+                td:nth-child(1){
+                    .footer-img{
+                        background-image: url("../img/VCB.png")
+                    }
+                }
+                td:nth-child(2){
+                    .footer-img{
+                        background-image: url("../img/AGRIBANK.png")
+                    }
+                }
+                td:nth-child(3){
+                    .footer-img{
+                        background-image: url("../img/IVB.png")
+                    }
+                }
+                td:nth-child(4){
+                    .footer-img{
+                        background-image: url("../img/STARLIGHT.png")
+                    }
+                }
+                td:nth-child(5){
+                    .footer-img{
+                        background-image: url("../img/TOUCH.png")
+                    }
+                }
+            }
+            .footer-tr:nth-child(4){
+                td:nth-child(1){
+                    .footer-img{
+                        background-image: url("../img/VIETTINBANK.png")
+                    }
+                }
+                td:nth-child(2){
+                    .footer-img{
+                        background-image: url("../img/momo.png")
+                    }
+                }
+                td:nth-child(3){
+                    .footer-img{
+                        background-image: url("../img/cnx.jpg")
+                    }
+                }
+                td:nth-child(4){
+                    .footer-img{
+                        background-image: url("../img/laban.png")
+                    }
+                }
+
+            }
+        }
+    }
+    .footer__right{
+        .footer-table{
+            .footer-tr{
+                margin-bottom: $mg-10;
+                display: block;
+                td{
+                padding-right: $pd-15;
+                .footer-img{
+                        display: block;
+                        @extend .bgCoverNoHeight;
+                        height: 3rem;
+                        width: 3rem;
+                        background-size: contain;
+                }
+                }
+            }
+        }
+        .col-6:first-child{
+            h5{
+                margin-bottom: $mg-10;
+            }
+            .footer-tr{
+                td:nth-child(1){
+                    .footer-img{
+                        background-image: url("../img/android-logo.png");
+                    }
+                }
+                td:nth-child(2){
+                    .footer-img{
+                        background-image: url("../img/apple-logo.png");
+                    }
+                }
+            }
+        }
+        .col-6:last-child{
+            h5{
+                margin-bottom: $mg-10;
+            }
+            .footer-tr{
+                td:nth-child(1){
+                    .footer-img{
+                        background-image: url("../img/zalo-logo.png");
+                    }
+                }
+                td:nth-child(2){
+                    .footer-img{
+                        background-image: url("../img/facebook-logo.png");
+                    }
+                }
+            }
+        }
+    }
+}

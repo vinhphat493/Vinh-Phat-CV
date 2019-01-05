@@ -1,0 +1,22 @@
+body::before{
+    content: '';
+    background: $colorBg;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: block;
+    transition: all 0.4 ease;
+    -webkit-transition: all 0.4 ease;
+    -moz-transition: all 0.4 ease;
+    -ms-transition: all 0.4 ease;
+    -o-transition: all 0.4 ease;
+  }
+  
+  .active-body{
+    &::before{
+        position: fixed;
+        pointer-events: auto;
+        opacity: 0.65;
+    }
+  }

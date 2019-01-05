@@ -1,0 +1,5 @@
+.footer{
+  p{
+    @include text($color-black, $fs-2, $fw-normal);
+  }
+}

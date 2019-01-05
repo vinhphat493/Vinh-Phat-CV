@@ -1,0 +1,783 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Cinema</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Font-awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
+        crossorigin="anonymous">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Ubuntu" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick-theme.css" />
+    <!-- My CSS  -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="container-fluid px-0">
+        <!-- Begin header -->
+        <header id="header">
+            <div class="container h-100 px-0">
+                <div class="row">
+                    <div class="col-12">
+                        <!-- Begin Navbar -->
+                        <nav class="header__nav">
+                            <div class="header__nav-left">
+                                <a href="./index.html" class="header__nav-logo">
+                                    <img src="./img/logo.svg" alt="Logo.png">
+                                </a>
+                                <ul class="header__nav-list mb-0">
+                                    <li class="header__nav-item">
+                                        <a class="header__nav-link active" href="#">Trang Chủ</a>
+                                    </li>
+                                    <li class="header__nav-item">
+                                        <a class="header__nav-link" href="#">Phim</a>
+                                    </li>
+                                    <li class="header__nav-item">
+                                        <a class="header__nav-link" href="#">Lịch Chiếu</a>
+                                    </li>
+                                    <li class="header__nav-item">
+                                        <a class="header__nav-link" href="#">Tin Tức</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="header__nav-right">
+                                <a class="header__nav-btnSearch" href="#">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                                <a href="#" class="btn btnPage header__nav-btnSinIn" id="btnSignIn">
+                                    <i class="fa fa-sign-in"></i>
+                                    <span>
+                                        Đăng nhập
+                                    </span>
+                                </a>
+                                <button class="btn btnPage header__nav-btnNav">
+                                    <i class="fa fa-bars"></i>
+                                    <i class="fa fa-times"></i>
+                                </button>
+                                <div class="header__nav-listRes">
+
+                                </div>
+                            </div>
+                        </nav>
+                        <!-- End Navbar -->
+                    </div>
+                </div>
+
+            </div>
+            <!-- Begin HeaderSearch -->
+            <div class="searchBox">
+                <div class="container px-0">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="searchBox__content">
+                                <input type="text" placeholder="Tìm tên phim..." id="txtSearch" />
+                                <a href="#" class="btn btnPage btnSearch">Tìm</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End HeaderSearch -->
+        </header>
+        <!-- End header -->
+
+        <!-- Begin main -->
+        <main id="main">
+            <!-- Begin carousel -->
+            <section id="carousel">
+                <!-- Begin home carousel -->
+                <div class="carousel__home">
+                    <div class="carousel__home-item">
+                        <div class="item-1 carousel__home-cover"></div>
+                    </div>
+                    <div class="carousel__home-item">
+                        <div class="item-2 carousel__home-cover"></div>
+                    </div>
+                    <div class="carousel__home-item">
+                        <div class="item-3 carousel__home-cover"></div>
+                    </div>
+                    <div class="carousel__home-item">
+                        <div class="item-4 carousel__home-cover"></div>
+                    </div>
+                </div>
+                <!-- End home carousel -->
+                <div class="container carousel__intro">
+                    <div class="row">
+                        <div class="col-12 carousel__intro-title">
+                            <div class="title__left">
+                                <b>PHIM MỚI</b>
+                            </div>
+                            <div class="title__right">
+                                <button class="title__right-btn" id="btn-next">
+                                    <i class="fa fa-arrow-left"></i>
+                                </button>
+                                <button class="title__right-btn" id="btn-prev">
+                                    <i class="fa fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-12 carousel__intro-item">
+                            <div class="item">
+                                <div class="card">
+                                    <div class="card-over-img">
+                                        <img class="card-img-top" src="./img/movie_1-min.jpg" alt="">
+                                        <a href="#" class="carousel__intro-linkImg">
+                                            <i class="fa fa-play-circle-o"></i>
+                                        </a>
+                                    </div>
+
+                                    <a href="#" class="carousel__intro_link">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Benched</h4>
+                                            <div class="card-text">
+                                                <p>Comedy</p>
+                                                <i class="fa fa-star"></i>
+                                                <span>7.1</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="card">
+                                    <div class="card-over-img">
+                                        <img class="card-img-top" src="./img/movie_2-min.jpg" alt="">
+                                        <a href="#" class="carousel__intro-linkImg">
+                                            <i class="fa fa-play-circle-o"></i>
+                                        </a>
+                                    </div>
+
+                                    <a href="#" class="carousel__intro_link">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Benched</h4>
+                                            <div class="card-text">
+                                                <p>Comedy</p>
+                                                <i class="fa fa-star"></i>
+                                                <span>7.1</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="card">
+                                    <div class="card-over-img">
+                                        <img class="card-img-top" src="./img/movie_3-min.jpg" alt="">
+                                        <a href="#" class="carousel__intro-linkImg">
+                                            <i class="fa fa-play-circle-o"></i>
+                                        </a>
+                                    </div>
+
+                                    <a href="#" class="carousel__intro_link">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Benched</h4>
+                                            <div class="card-text">
+                                                <p>Comedy</p>
+                                                <i class="fa fa-star"></i>
+                                                <span>7.1</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="card">
+                                    <div class="card-over-img">
+                                        <img class="card-img-top" src="./img/movie_4-min.jpg" alt="">
+                                        <a href="#" class="carousel__intro-linkImg">
+                                            <i class="fa fa-play-circle-o"></i>
+                                        </a>
+                                    </div>
+
+                                    <a href="#" class="carousel__intro_link">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Benched</h4>
+                                            <div class="card-text">
+                                                <p>Comedy</p>
+                                                <i class="fa fa-star"></i>
+                                                <span>7.1</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="card">
+                                    <div class="card-over-img">
+                                        <img class="card-img-top" src="./img/movie_5-min.jpg" alt="">
+                                        <a href="#" class="carousel__intro-linkImg">
+                                            <i class="fa fa-play-circle-o"></i>
+                                        </a>
+                                    </div>
+
+                                    <a href="#" class="carousel__intro_link">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Benched</h4>
+                                            <div class="card-text">
+                                                <p>Comedy</p>
+                                                <i class="fa fa-star"></i>
+                                                <span>7.1</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="card">
+                                    <div class="card-over-img">
+                                        <img class="card-img-top" src="./img/movie_6-min.jpg" alt="">
+                                        <a href="#" class="carousel__intro-linkImg">
+                                            <i class="fa fa-play-circle-o"></i>
+                                        </a>
+                                    </div>
+
+                                    <a href="#" class="carousel__intro_link">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Benched</h4>
+                                            <div class="card-text">
+                                                <p>Comedy</p>
+                                                <i class="fa fa-star"></i>
+                                                <span>7.1</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End carousel -->
+
+            <!-- Begin content -->
+            <section id="content">
+                <div class="row">
+                    <div class="col-12 content__navbar">
+                        <div class="container px-0">
+                            <!-- Nav pills -->
+                            <ul class="nav nav-pills">
+                                <li class="nav-item">
+                                    <a class="nav-link active" data-toggle="pill" href="#phimdangchieu">Phim Đang Chiếu</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="pill" href="#phimsapchieu">Phim Sắp Chiếu </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-content">
+                    <div class="tab-pane container active content__list" id="phimdangchieu">
+                        <div class="row">
+                            <div class="col-6 col-sm-12 col-lg-6 content__list-item">
+                                <div class="row">
+                                    <div class="col-sm-4 col-12 item__img">
+                                        <img src="./img/movie_1-min.jpg" alt="phim">
+                                        <a href="#" class="btn item__btn">Mua Vé</a>
+                                    </div>
+                                    <div class="col-sm-8 col-12 item__content">
+                                        <a href="#" class="item-Name item-ThongTin">
+                                            Dream in Another Language
+                                        </a>
+                                        <p class="item-ThongTin"><span class="item-ThongTin item-title">Nhà sản xuất :
+                                            </span>Lionsgate</p>
+                                        <p class="item-ThongTin"><span class="item-ThongTin item-title">Diễn viên :
+                                            </span>Taron
+                                            Egerton, Jamie Foxx, Jamie Dornan</p>
+                                        <p class="item-ThongTin"><span class="item-ThongTin item-title">Thể loại :
+                                            </span>Hành
+                                            Động</p>
+                                        <p class="item-ThongTin"><span class="item-ThongTin item-title">Quốc gia :
+                                            </span>Mỹ</p>
+                                        <p class="item-ThongTin"><span class="item-ThongTin item-title">Đạo diễn :
+                                            </span>Otto
+                                            Bathurst</p>
+                                        <p class="item-ThongTin"><span class="item-ThongTin item-title">Ngày phát hành
+                                                :
+                                            </span>23/11/2018</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-12 col-lg-6 content__list-item">
+                                <div class="row">
+                                    <div class="col-sm-4 col-12 item__img">
+                                        <img src="./img/movie_2-min.jpg" alt="phim">
+                                        <a href="#" class="btn item__btn">Mua Vé</a>
+                                    </div>
+                                    <div class="col-sm-8 col-12 item__content">
+                                        <a href="#" class="item-Name item-ThongTin">
+                                            Dream in Another Language
+                                        </a>
+                                        <p class="item-ThongTin"><span class="item-ThongTin item-title">Nhà sản xuất :
+                                            </span>Lionsgate</p>
+                                        <p class="item-ThongTin"><span class="item-ThongTin item-title">Diễn viên :
+                                            </span>Taron
+                                            Egerton, Jamie Foxx, Jamie Dornan</p>
+                                        <p class="item-ThongTin"><span class="item-ThongTin item-title">Thể loại :
+                                            </span>Hành
+                                            Động</p>
+                                        <p class="item-ThongTin"><span class="item-ThongTin item-title">Quốc gia :
+                                            </span>Mỹ</p>
+                                        <p class="item-ThongTin"><span class="item-ThongTin item-title">Đạo diễn :
+                                            </span>Otto
+                                            Bathurst</p>
+                                        <p class="item-ThongTin"><span class="item-ThongTin item-title">Ngày phát hành
+                                                :
+                                            </span>23/11/2018</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-12 col-lg-6 content__list-item">
+                                <div class="row">
+                                    <div class="col-sm-4 col-12 item__img">
+                                        <img src="./img/movie_1-min.jpg" alt="phim">
+                                        <a href="#" class="btn item__btn">Mua Vé</a>
+                                    </div>
+                                    <div class="col-sm-8 col-12 item__content">
+                                        <a href="#" class="item-Name item-ThongTin">
+                                            Dream in Another Language
+                                        </a>
+                                        <p class="item-ThongTin"><span class="item-ThongTin item-title">Nhà sản xuất :
+                                            </span>Lionsgate</p>
+                                        <p class="item-ThongTin"><span class="item-ThongTin item-title">Diễn viên :
+                                            </span>Taron
+                                            Egerton, Jamie Foxx, Jamie Dornan</p>
+                                        <p class="item-ThongTin"><span class="item-ThongTin item-title">Thể loại :
+                                            </span>Hành
+                                            Động</p>
+                                        <p class="item-ThongTin"><span class="item-ThongTin item-title">Quốc gia :
+                                            </span>Mỹ</p>
+                                        <p class="item-ThongTin"><span class="item-ThongTin item-title">Đạo diễn :
+                                            </span>Otto
+                                            Bathurst</p>
+                                        <p class="item-ThongTin"><span class="item-ThongTin item-title">Ngày phát hành
+                                                :
+                                            </span>23/11/2018</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-12 col-lg-6 content__list-item">
+                                <div class="row">
+                                    <div class="col-sm-4 col-12 item__img">
+                                        <img src="./img/movie_2-min.jpg" alt="phim">
+                                        <a href="#" class="btn item__btn">Mua Vé</a>
+                                    </div>
+                                    <div class="col-sm-8 col-12 item__content">
+                                        <a href="#" class="item-Name item-ThongTin">
+                                            Dream in Another Language
+                                        </a>
+                                        <p class="item-ThongTin"><span class="item-ThongTin item-title">Nhà sản xuất :
+                                            </span>Lionsgate</p>
+                                        <p class="item-ThongTin"><span class="item-ThongTin item-title">Diễn viên :
+                                            </span>Taron
+                                            Egerton, Jamie Foxx, Jamie Dornan</p>
+                                        <p class="item-ThongTin"><span class="item-ThongTin item-title">Thể loại :
+                                            </span>Hành
+                                            Động</p>
+                                        <p class="item-ThongTin"><span class="item-ThongTin item-title">Quốc gia :
+                                            </span>Mỹ</p>
+                                        <p class="item-ThongTin"><span class="item-ThongTin item-title">Đạo diễn :
+                                            </span>Otto
+                                            Bathurst</p>
+                                        <p class="item-ThongTin"><span class="item-ThongTin item-title">Ngày phát hành
+                                                :
+                                            </span>23/11/2018</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane container fade content__list" id="phimsapchieu">
+                        <div class="row">
+                            <div class="col-6 col-sm-12 col-lg-6 content__list-item">
+                                <div class="row">
+                                    <div class="col-sm-4 col-12 item__img">
+                                        <img src="./img/movie_4-min.jpg" alt="phim">
+                                        <a href="#" class="btn item__btn">Chi Tiết</a>
+                                    </div>
+                                    <div class="col-sm-8 col-12 item__content">
+                                        <a href="#" class="item-Name item-ThongTin">
+                                            Dream in Another Language
+                                        </a>
+                                        <p class="item-ThongTin"><span class="item-ThongTin item-title">Nhà sản xuất :
+                                            </span>Lionsgate</p>
+                                        <p class="item-ThongTin"><span class="item-ThongTin item-title">Diễn viên :
+                                            </span>Taron
+                                            Egerton, Jamie Foxx, Jamie Dornan</p>
+                                        <p class="item-ThongTin"><span class="item-ThongTin item-title">Thể loại :
+                                            </span>Hành
+                                            Động</p>
+                                        <p class="item-ThongTin"><span class="item-ThongTin item-title">Quốc gia :
+                                            </span>Mỹ</p>
+                                        <p class="item-ThongTin"><span class="item-ThongTin item-title">Đạo diễn :
+                                            </span>Otto
+                                            Bathurst</p>
+                                        <p class="item-ThongTin"><span class="item-ThongTin item-title">Ngày phát hành
+                                                :
+                                            </span>23/11/2018</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-12 col-lg-6 content__list-item">
+                                <div class="row">
+                                    <div class="col-sm-4 col-12 item__img">
+                                        <img src="./img/movie_3-min.jpg" alt="phim">
+                                        <a href="#" class="btn item__btn">Chi Tiết</a>
+                                    </div>
+                                    <div class="col-sm-8 col-12 item__content">
+                                        <a href="#" class="item-Name item-ThongTin">
+                                            Dream in Another Language
+                                        </a>
+                                        <p class="item-ThongTin"><span class="item-ThongTin item-title">Nhà sản xuất :
+                                            </span>Lionsgate</p>
+                                        <p class="item-ThongTin"><span class="item-ThongTin item-title">Diễn viên :
+                                            </span>Taron
+                                            Egerton, Jamie Foxx, Jamie Dornan</p>
+                                        <p class="item-ThongTin"><span class="item-ThongTin item-title">Thể loại :
+                                            </span>Hành
+                                            Động</p>
+                                        <p class="item-ThongTin"><span class="item-ThongTin item-title">Quốc gia :
+                                            </span>Mỹ</p>
+                                        <p class="item-ThongTin"><span class="item-ThongTin item-title">Đạo diễn :
+                                            </span>Otto
+                                            Bathurst</p>
+                                        <p class="item-ThongTin"><span class="item-ThongTin item-title">Ngày phát hành
+                                                :
+                                            </span>23/11/2018</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End content -->
+
+            <!-- Begin bookingPage -->
+            <section class="container" id="bookingPage">
+                <div class="row">
+                    <div class="col-md-1 bookingPage__listStudio">
+                        <!-- Nav studio -->
+                        <ul class="nav nav-pills">
+                            <li class="nav-item">
+                                <a class="nav-link studio-1 active" data-toggle="pill" href="#bhd"></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link studio-2" data-toggle="pill" href="#galaxy"></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link studio-3" data-toggle="pill" href="#lotte"></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link studio-4" data-toggle="pill" href="#cns"></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link studio-5" data-toggle="pill" href="#ddc"></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link studio-6" data-toggle="pill" href="#mega"></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link studio-7" data-toggle="pill" href="#cgv"></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link studio-8" data-toggle="pill" href="#cinema"></a>
+                            </li>
+                        </ul>
+                        <!-- Nav studio -->
+                    </div>
+                    <div class="col-md-4 bookingPage__listCinema tab-content">
+                        <div class="tab-pane active" id="bhd">
+                            <ul class="nav nav-pills flex-column">
+                                <li class="nav-item">
+                                    <a class="nav-link active" data-toggle="pill" href="#home">
+                                        <div class="cinema__item">
+                                            <h5 class="cinema-name">BHD Star Cineplex <span> - Vincom Thảo Điền</span>
+                                            </h5>
+                                            <p class="cinema-address">L5-Megamall, 159 XL Hà Nội,Q...</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="pill" href="#menu1">
+                                        <div class="cinema__item">
+                                            <h5 class="cinema-name">BHD Star Cineplex <span> - Vincom Thảo Điền</span>
+                                            </h5>
+                                            <p class="cinema-address">L5-Megamall, 159 XL Hà Nội,Q...</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="pill" href="#menu2">
+                                        <div class="cinema__item">
+                                            <h5 class="cinema-name">BHD Star Cineplex <span> - Vincom Thảo Điền</span>
+                                            </h5>
+                                            <p class="cinema-address">L5-Megamall, 159 XL Hà Nội,Q...</p>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-pane fade" id="galaxy">
+                            Content galaxy
+                        </div>
+                        <div class="tab-pane fade" id="lotte">
+                            Content lotte
+                        </div>
+                        <div class="tab-pane fade" id="cns">
+                            Content cns
+                        </div>
+                        <div class="tab-pane fade" id="ddc">
+                            Content ddc
+                        </div>
+                        <div class="tab-pane fade" id="mega">
+                            Content mega
+                        </div>
+                        <div class="tab-pane fade" id="cgv">
+                            Content cgv
+                        </div>
+                        <div class="tab-pane fade" id="cinema">
+                            Content cinema
+                        </div>
+                    </div>
+                    <div class="col-md-7 bookingPage__listMovie">
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <div class="tab-pane container active movie" id="home">
+                                <div class="row movie__box">
+                                    <div class="col-2 movie-img">
+                                        <ul class="nav">
+                                            <li class="nav-item img-Flim">
+                                                <img src="./img/movie1.jpg" alt="">
+                                            </li>
+                                            <li class="nav-item">
+                                                <img src="./img/2_0.png" alt="">
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-10 movie-content">
+                                        <ul class="nav">
+                                            <li class="nav-item">
+                                                <h5 class="movie-name"> <span>C16</span> Robin Hood</h5>
+                                                <p class="movie-info">118 phút</p>
+                                            </li>
+                                            <li class="nav-item">
+                                                <ul class="nav movie-showTime">
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="#">22:15</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="#">23:00</a>
+                                                    </li>
+
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="row movie__box">
+                                    <div class="col-2 movie-img">
+                                        <ul class="nav">
+                                            <li class="nav-item img-Flim">
+                                                <img src="./img/movie1.jpg" alt="">
+                                            </li>
+                                            <li class="nav-item">
+                                                <img src="./img/2_0.png" alt="">
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-10 movie-content">
+                                        <ul class="nav">
+                                            <li class="nav-item">
+                                                <h5 class="movie-name"> <span>C16</span> Robin Hood</h5>
+                                                <p class="movie-info">118 phút</p>
+                                            </li>
+                                            <li class="nav-item">
+                                                <ul class="nav movie-showTime">
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="#">22:15</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="#">23:00</a>
+                                                    </li>
+
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane container fade movie" id="menu1">menu 1</div>
+                            <div class="tab-pane container fade movie" id="menu2">menu 2</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End bookingPage -->
+        </main>
+        <!-- End main -->
+
+        <!-- Begin Footer -->
+        <footer id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-4 footer__left">
+                        <h5 class="footer-title">FlixGo</h5>
+                        <div class="row">
+                            <div class="col-6">
+                                <a href="#" class="footer-item">FAQ</a>
+                                <a href="#" class="footer-item">Brand Guidelines</a>
+                            </div>
+                            <div class="col-6">
+                                <a href="#" class="footer-item">Thỏa thuận sử dụng</a>
+                                <a href="#" class="footer-item">Quy chế hoạt động</a>
+                                <a href="#" class="footer-item">Chính sách bảo mật</a>
+                                <a href="#" class="footer-item">Quyền lợi thành viên</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 footer__middle">
+                        <h5 class="footer-title">Đối tác</h5>
+                        <div class="row">
+                            <div class="col-12">
+                                <table class="footer-table">
+                                    <tr class="footer-tr">
+                                        <td>
+                                            <a href="#" class="footer-img"></a>
+                                        </td>
+                                        <td>
+                                            <a href="#" class="footer-img"></a>
+                                        </td>
+                                        <td>
+                                            <a href="#" class="footer-img"></a>
+                                        </td>
+                                        <td>
+                                            <a href="#" class="footer-img"></a>
+                                        </td>
+                                        <td>
+                                            <a href="#" class="footer-img"></a>
+                                        </td>
+                                    </tr>
+                                    <tr class="footer-tr">
+                                        <td>
+                                            <a href="#" class="footer-img"></a>
+                                        </td>
+                                        <td>
+                                            <a href="#" class="footer-img"></a>
+                                        </td>
+                                        <td>
+                                            <a href="#" class="footer-img"></a>
+                                        </td>
+                                        <td>
+                                            <a href="#" class="footer-img"></a>
+                                        </td>
+                                        <td>
+                                            <a href="#" class="footer-img"></a>
+                                        </td>
+                                    </tr>
+                                    <tr class="footer-tr">
+                                        <td>
+                                            <a href="#" class="footer-img"></a>
+                                        </td>
+                                        <td>
+                                            <a href="#" class="footer-img"></a>
+                                        </td>
+                                        <td>
+                                            <a href="#" class="footer-img"></a>
+                                        </td>
+                                        <td>
+                                            <a href="#" class="footer-img"></a>
+                                        </td>
+                                        <td>
+                                            <a href="#" class="footer-img"></a>
+                                        </td>
+                                    </tr>
+                                    <tr class="footer-tr">
+                                        <td>
+                                            <a href="#" class="footer-img"></a>
+                                        </td>
+                                        <td>
+                                            <a href="#" class="footer-img"></a>
+                                        </td>
+                                        <td>
+                                            <a href="#" class="footer-img"></a>
+                                        </td>
+                                        <td>
+                                            <a href="#" class="footer-img"></a>
+                                        </td>
+
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 footer__right">
+                        <div class="row">
+                            <div class="col-6">
+                                <h5 class="footer-title">
+                                    Mobile App
+                                </h5>
+                                <table class="footer-table">
+                                    <tr class="footer-tr">
+                                        <td>
+                                            <a href="#" class="footer-img"></a>
+                                        </td>
+                                        <td>
+                                            <a href="#" class="footer-img"></a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="col-6">
+                                <h5 class="footer-title">
+                                    Social
+                                </h5>
+                                <table class="footer-table">
+                                    <tr class="footer-tr">
+                                        <td>
+                                            <a href="#" class="footer-img"></a>
+                                        </td>
+                                        <td>
+                                            <a href="#" class="footer-img"></a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- End Footer -->
+
+       
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
+        crossorigin="anonymous"></script>
+    <!-- Thêm các thư viện javascript của slick vào project -->
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick.min.js"></script>
+    <!-- My Js -->
+    <script src="./js/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,262 @@
+#bookingPage{
+    margin-top: $pd-40;
+    margin-bottom: $pd-40;
+    font-size: 20px;
+    color: white;
+    border: 2px solid $colorDark;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    max-height: 72rem;
+    overflow-y: scroll;
+    .row{
+        // padding: $pd-20;
+        .bookingPage__listStudio{
+            background-color: transparent;
+            padding: 0;
+            text-align: center;
+            // border-right: 1px solid $colorDark;
+            padding-top: $pd-25;
+            min-height: 70rem;
+            
+            @include MediaQueryPhone($xs){
+                border-bottom: 2px solid $colorDark;
+                border-right: none;
+            }
+            @include MediaQuery($xs){
+                border-bottom: 2px solid $colorDark;
+                border-right: none;
+            }
+            @include MediaQuery($sm){
+                border-bottom: none;
+                border-right: 2px solid $colorDark;
+            }
+            .nav{
+                justify-content: center;
+                .nav-item{
+                    margin-bottom: $mg-25;
+                    .nav-link{
+                        @include MediaQueryPhone($xs){
+                            height: 3rem;
+                            width: 3rem;
+                            background-color: transparent;
+                            padding: 0;
+                            margin: 0 $mg-10;
+                            &::before{
+                                height: 0;
+                            }
+                        }
+                        @include MediaQuery($xs){
+                            height: 4rem;
+                            width: 4rem;
+                            background-color: transparent;
+                            padding: 0;
+                            margin: 0 $mg-10;
+                            &::before{
+                                height: 0;
+                            }
+                        }
+                        @include MediaQuery($sm){
+                            height: 4rem;
+                            width: 4rem;
+                            background-color: transparent;
+                            padding: 0;
+                            &::before{
+                                height: 2px;
+                            }
+                        }
+                        @include MediaQuery($md){
+                            height: 5rem;
+                            width: 5rem;
+                            background-color: transparent;
+                            padding: 0;
+                            &::before{
+                                height: 2px;
+                            }
+                        };
+                        @extend .bgCoverNoHeight;
+                        @extend .linkHaveBoder;
+                    }
+                    .studio-1{
+                        background-image: url("../img/bhd.png");
+                    }
+                    .studio-2{
+                        background-image: url("../img/galaxycine.png");
+                    }
+                    .studio-3{
+                        background-image: url("../img/lotte.png");
+                    }
+                    .studio-4{
+                        background-image: url("../img/cinestar.png");
+                    }
+                    .studio-5{
+                        background-image: url("../img/dongdacinema.png");
+                    }
+                    .studio-6{
+                        background-image: url("../img/megags.png");
+                    }
+                    .studio-7{
+                        background-image: url("../img/cgv.png");
+                    }
+                    .studio-8{
+                        background-image: url("../img/cinema.png");
+                        &::before{
+                            height: 0;
+                        }
+                    }
+                    .active{
+                        opacity: 1;
+                    }
+                }
+                
+            }
+            
+        }
+        .bookingPage__listCinema{
+            padding-top: $pd-25;
+            background-color: transparent;
+            min-height: 70rem;
+            .nav-item{
+                .nav-link{
+                    background-color: transparent;
+                    @extend .linkHaveBoder;
+                    &::before{
+                        bottom: 20px;
+                    }
+                    .cinema__item{
+                        margin-bottom: $mg-35;
+                        .cinema-name{
+                            @include text(rgba($colorPink,0.8),$fs-15,600);
+                            span{
+                                color: white;
+                                font-weight: normal;
+                            }
+                        }
+                        .cinema-address{
+                            margin-top: $mg-10;
+                            @include text($colorText,$fs-15,normal);
+                        }
+                    }
+                }
+                .active{
+                    opacity: 1;
+                }
+            }
+            @include MediaQueryPhone($xs){
+                border-bottom: 2px solid $colorDark;
+                border-right: none;
+            }
+            @include MediaQuery($xs){
+                border-bottom: 2px solid $colorDark;
+                border-right: none;
+            }
+            @include MediaQuery($sm){
+                border-bottom: none;
+                border-right: 2px solid $colorDark;
+            }
+        }
+        .bookingPage__listMovie{
+            padding-top: $pd-25;
+            background-color: transparent;
+            min-height: 70rem;
+            .movie{
+                .movie__box{
+                    @extend .linkHaveBoder;
+                    opacity: 1; 
+                    .movie-img{
+                        .nav{
+                            flex-direction: column;
+                            align-items: center;
+                            .img-Flim{
+                                margin-bottom: $mg-10;
+                            }
+                        }
+                    }
+                    .movie-content{
+                        .nav{
+                            flex-direction: column;
+                            align-items: flex-start;
+                            .movie-name{
+                                @include text(rgba($colorPink,0.8),$fs-20,600);
+                                span{
+                                    margin-right: $mg-10;
+                                    color: white;
+                                    font-weight: normal;
+                                    display: inline-block;
+                                    background-image: $colorPinkGadient;
+                                    height: 4rem;
+                                    width: 4rem;
+                                    border-radius: 50%;
+                                    line-height: 4rem;
+                                    -webkit-border-radius: 50%;
+                                    -moz-border-radius: 50%;
+                                    -ms-border-radius: 50%;
+                                    -o-border-radius: 50%;
+                                    text-align: center;
+                                }
+                            }
+                            .movie-info{
+                                margin-top: $mg-10;
+                                @include text($colorText,$fs-15,normal);
+                            }
+                            .movie-showTime{
+                                flex-direction: row;
+                                align-items: flex-start;
+                                justify-content: start;
+                                .nav-item{
+                                    margin-right: $mg-15;
+                                    .nav-link{
+                                        padding: 0;
+                                        color: $colorText;
+                                        font-size: $fs-25;
+                                        transition:all 0.5;
+                                        
+                                        -webkit-transition:all 0.5;
+                                        -moz-transition:all 0.5;
+                                        -ms-transition:all 0.5;
+                                        -o-transition:all 0.5;
+                                        &:hover{
+                                            color:$colorPink;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    @include MediaQueryPhone($xs){
+                        border-bottom: 1px solid $colorDark;
+                        margin-bottom: $mg-25;
+                        &:last-child{
+                            border-bottom: none;
+                        }
+                        &::before{
+                            height: 0;
+                        }
+                    }
+                    @include MediaQuery($xs){
+                        border-bottom: 1px solid $colorDark;
+                        margin-bottom: $mg-25;
+                        &:last-child{
+                            border-bottom: none;
+                        }
+                        &::before{
+                            height: 0;
+                        }
+                    }
+                    @include MediaQuery($sm){
+                        border-bottom: none;
+                        margin-bottom: $mg-35;
+                        &::before{
+                            height: 2px;
+                        }
+                    }
+                }
+                
+            }
+            
+        }
+    }
+    
+}

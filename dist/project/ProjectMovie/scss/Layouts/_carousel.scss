@@ -1,0 +1,277 @@
+#carousel{
+    position: relative;
+    padding: $pd-40 0 $pd-65 0;
+    z-index: 1;
+    display: block;
+    background-color: $colorBg;
+    &::before{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        height: 0.3rem;
+        width: 100%;
+        background-image: $colorPinkGadient;
+    }
+    .carousel__home{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+        .item-1{
+            @extend .bgCover;
+            background-image: url(../img/carousel_1-min.jpg);
+        }
+        .item-2{
+            @extend .bgCover;
+            background-image: url(../img/carousel_2-min.jpg);
+        }
+        .item-3{
+            @extend .bgCover;
+            background-image: url(../img/carousel_3-min.jpg);
+        }
+        .item-4{
+            @extend .bgCover;
+            background-image: url(../img/carousel_4-min.jpg);
+        }
+        .carousel__home-cover{
+            opacity: 0.07;
+            @include MediaQueryPhone($xs){
+                height: 50rem;
+            }
+            @include MediaQuery($xs){
+                height: 52rem;
+            }
+            @include MediaQuery($sm){
+                height: 60rem;
+            }
+            @include MediaQuery($md){
+                height: 70rem;
+            }
+            @include MediaQuery($lg){
+                height: 77rem;
+            }
+        }
+    }
+    .carousel__intro{
+        margin-top: 15rem;
+        .carousel__intro-title{
+            z-index: 1;
+            background-color: rgba(43,43,49,0.08);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            
+            .title__left{
+                @include MediaQueryPhone(576px){
+                    @include text($colorWhite,$fs-20,300);
+                    b{
+                    background-color: rgba(43,43,49,0.08);
+                    @include text($colorWhite,$fs-20,700);
+                    }
+                }
+                @include MediaQuery (576px){
+                    @include text($colorWhite,$fs-20,300);
+                    b{
+                    background-color: rgba(43,43,49,0.08);
+                    @include text($colorWhite,$fs-20,700);
+                    }
+                }
+                @include MediaQuery (768px){
+                    @include text($colorWhite,$fs-30,300);
+                    b{
+                    background-color: rgba(43,43,49,0.08);
+                    @include text($colorWhite,$fs-30,700);
+                    }
+                }
+                @include MediaQuery (992px){
+                    background-color: transparent;
+                    @include text($colorWhite,$fs-35,300);
+                    b{
+                        background-color: rgba(43,43,49,0.08);
+                        @include text($colorWhite,$fs-35,700);
+                    }
+                }
+            }
+            .title__right{
+                background-color: transparent;
+                .title__right-btn{
+                    margin: 0 $mg-10;
+                    // text-decoration: none;
+                    background-color: transparent;
+                    border: none;
+                    outline: none;
+                    cursor: pointer;
+                    &:hover{
+                        color: $colorWhite;
+                    }
+                    i{
+                        background-color: transparent;
+                    }
+                    @include MediaQueryPhone (576px){
+                        @include text($colorText,$fs-15,700);
+                    }
+                    @include MediaQuery (576px){
+                        @include text($colorText,$fs-20,700);
+                    }
+                    @include MediaQuery (768px){
+                        @include text($colorText,$fs-25,700);
+                    }
+                }
+            }
+        }
+        .carousel__intro-item{
+            z-index: 1;
+            margin-top: $mg-45;
+            padding: 0;
+            &:focus{
+                outline: none!important
+            }
+            .item{
+                margin: 0 auto;
+                &:focus{
+                    outline: none!important;
+                }
+                .card{
+                    border: none;
+                    padding: 0 $pd-15;
+                    background-color: transparent;
+                    &:focus{
+                        outline: unset!important;
+                    }
+                    .card-over-img{
+                        position: relative;
+                        .card-img-top{
+                            width: 100%;
+                            &:focus{
+                                outline: none!important;
+                            }
+                        }
+                        .carousel__intro-linkImg{
+                            text-decoration: none;
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform:translate(-50%,-50%);
+                            -webkit-transform:translate(-50%,-50%);
+                            -moz-transform:translate(-50%,-50%);
+                            -ms-transform:translate(-50%,-50%);
+                            -o-transform:translate(-50%,-50%);
+                            &:focus{
+                                outline: none;
+                            }
+                            i{
+                                @include text($colorWhite,$fs-70,normal);
+                                opacity: 0;
+                                transition:all 0.5s ;
+                                -webkit-transition:all 0.5s ;
+                                -moz-transition:all 0.5s ;
+                                -ms-transition:all 0.5s ;
+                                -o-transition:all 0.5s ;
+                            }
+                        }
+                        &:before{
+                            content: '';
+                            position: absolute;
+                            top: 0;
+                            bottom: 0;
+                            right: 0;
+                            left: 0;
+                            background-image: $colorPinkGadient;
+                            opacity: 0;
+                            transition: all 0.5s ease-in                           ;
+                            -webkit-transition: all 0.5s ease-in                           ;
+                            -moz-transition: all 0.5s ease-in                           ;
+                            -ms-transition: all 0.5s ease-in                           ;
+                            -o-transition: all 0.5s ease-in                           ;
+                        }
+                        &:hover::before{
+                            opacity: 0.6;
+                        }
+                        &:hover{
+                            .carousel__intro-linkImg{
+                                i{
+                                    opacity: 0.8;
+                                }
+                            }
+                        }
+                        
+                    }
+                    .carousel__intro_link{
+                        text-decoration: none;
+                        color : black;
+                        &:focus{
+                            outline: none;
+                        }
+                        .card-body{
+                            padding-left: 0;
+                            padding-right: 0;
+                            .card-title{
+                                @include MediaQueryPhone(576px){
+                                    @include text($colorWhite,$fs-15,normal); 
+                                }
+                                @include MediaQuery(576px){
+                                    @include text($colorWhite,$fs-15,normal); 
+                                }
+                                @include MediaQuery(992px){
+                                    @include text($colorWhite,$fs-20,normal); 
+                                }
+                                @include MediaQuery(1200px){
+                                    @include text($colorWhite,$fs-20+0.2rem,normal); 
+                                }
+                            }
+                            .card-text{
+                                p{  
+                                    @include MediaQueryPhone(576px){
+                                        @include text($colorPink,$fs-10,normal); 
+                                    }
+                                    @include MediaQuery(576px){
+                                        @include text($colorPink,$fs-13,normal); 
+                                    }
+                                    @include MediaQuery(768px){
+                                        @include text($colorPink,$fs-15,normal); 
+                                    }
+                                    @include MediaQuery(1200px){
+                                        @include text($colorPink,$fs-15,normal);
+                                    }
+                                }
+                                .fa-star{
+                                    margin-right: $mg-10;
+                                    @include MediaQueryPhone(576px){
+                                        @include text($colorPink,$fs-10,bold); 
+                                    }
+                                    @include MediaQuery(576px){
+                                        @include text($colorPink,$fs-13,bold); 
+                                    }
+                                    @include MediaQuery(768px){
+                                        @include text($colorPink,$fs-15,bold); 
+                                    }
+                                    @include MediaQuery(1200px){
+                                        @include text($colorPink,$fs-15,bold);
+                                    }
+                                }
+                                span{
+                                    @include MediaQueryPhone(576px){
+                                        @include text($colorWhite,$fs-10,bold); 
+                                    }
+                                    @include MediaQuery(576px){
+                                        @include text($colorWhite,$fs-13,bold); 
+                                    }
+                                    @include MediaQuery(768px){
+                                        @include text($colorWhite,$fs-15,bold); 
+                                    }
+                                    @include MediaQuery(1200px){
+                                        @include text($colorWhite,$fs-15,bold);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+}

@@ -1,0 +1,273 @@
+#header{
+    height: 9rem;
+    width: 100%;
+    @extend .bgSection;
+    z-index: 100;
+    position: fixed;
+    .header__nav{
+        display: flex;
+        justify-content: space-between;
+        line-height: 9rem;
+        height: 9rem; 
+        .header__nav-left{
+            display: flex;
+            .header__nav-logo{
+                @include MediaQueryPhone (576px) {
+                    width: 12rem;
+                    text-align: center;
+                    img{
+                        width: 70%;
+                    }
+                } 
+                @include MediaQuery(1200px){
+                    width: 24rem;
+                    height: 9rem;
+                    text-align: center;
+                    transition:all 0.5s                 ;
+                    -webkit-transition:all 0.5s                 ;
+                    -moz-transition:all 0.5s                 ;
+                    -ms-transition:all 0.5s                 ;
+                    -o-transition:all 0.5s                 ;
+                    background-color: $colorDark;
+                    img{
+                        background-color: transparent;
+                    }
+                    
+                }
+                &:hover{
+                    background-color: $colorBg
+                }
+            }
+            .header__nav-list{
+                .header__nav-item{
+                    margin: 0 $mg-25;
+                    .header__nav-link{
+                        display: block;
+                        line-height: 9rem;
+                        text-transform: uppercase;
+                        @include text($colorText,$fs-15,300);
+                        text-decoration: none;
+                        transition:  all 0.5s               ;
+                        -webkit-transition:  all 0.5s               ;
+                        -moz-transition:  all 0.5s               ;
+                        -ms-transition:  all 0.5s               ;
+                        -o-transition:  all 0.5s               ;
+                        &:hover{
+                            color:$colorPink;
+                        }
+                        @include MediaQueryPhone(576px){
+                            @include text($colorText,$mg-10,300);
+                        }
+                        @include MediaQuery(576px){
+                            @include text($colorText,$mg-10,300);
+                        }
+                        @include MediaQuery(768px){
+                            @include text($colorText,$fs-15,300);
+                        }
+                    }
+                    @include MediaQueryPhone(576px){
+                        height: 4rem;
+                    }
+                    @include MediaQuery(576px){
+                        height: 4rem;
+                    }
+                }
+                transition:     all 0.4s    ease-in-out       ;
+                -webkit-transition:     all 0.4s    ease-in-out       ;
+                -moz-transition:     all 0.4s    ease-in-out       ;
+                -ms-transition:     all 0.4s    ease-in-out       ;
+                -o-transition:     all 0.4s    ease-in-out       ;
+                @include MediaQueryPhone(576px) {
+                    flex-direction: column;
+                    top: 9.1rem;
+                    right: 0;
+                    bottom: 0;
+                    position: fixed;
+                    background-color: $colorBg;
+                    z-index: 99;
+                    // padding: $pd-10;
+                    width: 28rem;
+                    border-top: 3px solid $colorPink;
+                    height: auto;
+                    transform: translateX(28rem)                ;
+                    -webkit-transform: translateX(28rem)                ;
+                    -moz-transform: translateX(28rem)                ;
+                    -ms-transform: translateX(28rem)                ;
+                    -o-transform: translateX(28rem)                ;
+                } 
+                @include MediaQuery(576px){
+                    flex-direction: column;
+                    top: 9.1rem;
+                    right: 0;
+                    bottom: 0;
+                    position: fixed;
+                    background-color: $colorBg;
+                    z-index: 99;
+                    padding: $pd-10;
+                    width: 28rem;
+                    border-top: 3px solid $colorPink;
+                    height: auto;
+                    transform: translateX(28rem)                ;
+                    -webkit-transform: translateX(28rem)                ;
+                    -moz-transform: translateX(28rem)                ;
+                    -ms-transform: translateX(28rem)                ;
+                    -o-transform: translateX(28rem)                ;
+                }
+                @include MediaQuery(1200px){
+                    display: flex;
+                    flex-direction: row;
+                    position: unset;
+                    width: unset;
+                    border: none;
+                    transform: none                ;
+                    -webkit-transform: none                ;
+                    -moz-transform: none                ;
+                    -ms-transform: none                ;
+                    -o-transform: none                ;
+                    padding: 0;
+                    margin-left: $mg-25;
+                }
+            }
+            .active{
+                color : $colorPink!important
+            }
+            .active-list{
+                transform: translateX(0) !important               ;
+                -webkit-transform: translateX(0) !important               ;
+                -moz-transform: translateX(0) !important               ;
+                -ms-transform: translateX(0) !important               ;
+                -o-transform: translateX(0) !important               ;               
+            }
+        }
+        .header__nav-right{
+            display: flex;
+            align-items: center;
+            .header__nav-btnSearch{
+                @include text($colorText,$fs-30,300);
+                text-decoration: none;
+                transition: all 0.5s                            ;
+                -webkit-transition: all 0.5s                            ;
+                -moz-transition: all 0.5s                            ;
+                -ms-transition: all 0.5s                            ;
+                -o-transition: all 0.5s                            ;
+                margin-right: $mg-25;
+                &:hover {
+                    color: $colorWhite
+                }
+            }
+            .header__nav-btnSinIn{
+                @media only screen and (max-width: 576px) {
+                    padding: $pd-10 $pd-10;
+                    margin-left: $mg-15;
+                    span{
+                        display: none;
+                    }
+                    i{  
+                        display: block;
+                        text-transform: uppercase;
+                        letter-spacing: 2px;
+                        font-size: $fs-20;
+                        background-color: transparent;
+                    }
+                } 
+                @include MediaQuery (576px){
+                    padding: $pd-10 $pd-15;
+                    margin-left: $mg-15;
+                    span{
+                        display: none;
+                    }
+                    i{
+                        display: block;
+                        text-transform: uppercase;
+                        letter-spacing: 2px;
+                        font-size: $fs-20;
+                        background-color: transparent;
+                    }
+                }
+                @include MediaQuery (768px){
+                    padding: $pd-10 $pd-25;
+                    margin-left: $mg-15;
+                    span{
+                        display: block;
+                        text-transform: uppercase;
+                        letter-spacing: 2px;
+                        font-size: $fs-15;
+                        background-color: transparent;
+                    }
+                    i{
+                        display: none;
+                    }
+                }
+                @include MediaQuery (1200px){
+                    padding: $pd-10 $pd-25;
+                    margin-left: $mg-25;
+                    span{
+                        display: block;
+                    }
+                    i{
+                        display: none;
+                    }
+                    span,i{
+                        text-transform: uppercase;
+                        letter-spacing: 2px;
+                        font-size: $fs-15;
+                        background-color: transparent;
+                    }
+                }
+            }
+            .header__nav-btnNav{
+                margin: $mg-25;
+                outline: none;
+                padding-left: $pd-15!important;
+                padding-right: $pd-15!important;
+                line-height: 20px;
+                @media only screen and (max-width: 576px) {
+                    padding: $pd-10 $pd-10;
+                    margin-left: $mg-15;
+                    i{  
+                        font-size: $fs-15;
+                        color: white;
+                        opacity: .8;
+                    }
+                } 
+                @include MediaQuery(992px){
+                    display: block;
+                }
+                @include MediaQuery(1200px){
+                    display: none;
+                }
+                .fa-times{
+                    display: none;
+                }
+                i{
+                    font-size: $fs-20;
+                    color: white;
+                    opacity: .8;
+                }
+                &:hover{
+                    i{
+                        opacity: 1;
+                    }
+                }
+                &:focus{
+                    box-shadow: none;
+                }
+                transition: all 0.2s ease            ;
+                -webkit-transition: all 0.2s ease            ;
+                -moz-transition: all 0.2s ease            ;
+                -ms-transition: all 0.2s ease            ;
+                -o-transition: all 0.2s ease            ;
+            }
+            .active-fa{
+                .fa-bars{
+                    display: none;
+                }
+                .fa-times{
+                    display: block;
+                }
+            }
+        }
+        
+    }
+}
+
