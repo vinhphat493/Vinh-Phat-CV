@@ -1,0 +1,28 @@
+.navbar--black{
+  background-color: $color-black!important;
+  .navbar-brand {
+    img{
+      width: 70px;
+      margin-right: $mg-3;
+    }
+    span{
+      padding-right: $pd-1;
+      border-right: 1px solid $color-white;
+    }
+  }
+  .nav-item{
+    margin-left: $mg-1;
+    
+    .nav-link{
+      color: $color-grey;
+      font-size: $fs-1;
+      p{
+        margin-bottom: 5px;
+      }
+      &:hover{
+        color: $color-blue;
+      }
+    }
+    
+  }
+}

@@ -1,0 +1,22 @@
+#recognizedBy{
+    padding: $pd-6 0 $pd-7 0;
+    .recognizedBy-title{
+        @include text($color-dark,$fs-4,$fw-bold);
+        line-height: 1.25;
+        letter-spacing: 0.4px;
+        text-align: center;
+        margin-bottom: $mg-7;
+    }
+    .recognizedBy-box{
+        border-radius: 4px;
+        background-color: $color-white;
+        border: solid 2px $color-light;
+        padding: $pd-6 0px $pd-6 0px;
+        z-index: 20;
+        box-shadow: 0 6px 8px $color-light;
+        img{
+            margin: 0 $mg-5;
+        }
+    }
+    
+}

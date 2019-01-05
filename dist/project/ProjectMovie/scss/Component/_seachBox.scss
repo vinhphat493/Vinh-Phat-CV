@@ -1,0 +1,28 @@
+.searchBox{
+    width: 100%;
+    border-top: 1px solid $colorText;
+    .searchBox__content{
+        background-color: $colorDark;
+        display: flex;
+        align-content: center;
+        justify-content: flex-start;
+        height: 6rem;
+        #txtSearch{
+            width: 100%;
+            border: none;
+            outline: none;
+            height: 6rem;
+            background-color: transparent;
+            @include text($colorWhite,$fs-15,500);
+            padding-left: $pd-25;
+            padding-right: $pd-130;
+        }
+        .btnSearch{
+            line-height: 3rem;
+            margin: $mg-10 $mg-15;
+            padding: $pd-05 $pd-25!important;
+            display: inline-block;
+            margin-left: 0;
+        }
+    }
+}

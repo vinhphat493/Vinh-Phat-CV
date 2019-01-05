@@ -1,0 +1,185 @@
+#content{
+    padding: 0 0 $pd-40 0;
+    .content__navbar{
+        height: 9.5rem;
+        padding-top: $pd-40;
+        padding-bottom: $pd-05;
+        @extend .bgSection;
+        .nav-pills{
+            .nav-item{
+                margin: 0 $mg-15;
+                .nav-link{
+                    background-color: transparent;
+                    border: none;
+                    @include text($colorText,$fs-25,500);
+                    text-transform: uppercase;
+                    position: relative;
+                    @include MediaQueryPhone($xs){
+                        font-size: $fs-15;
+                    }
+                    @include MediaQuery($xs){
+                        font-size: $fs-20;
+                    }
+                    @include MediaQuery($sm){
+                        font-size: $fs-25;
+                    }
+                    @include MediaQuery($md){
+                        font-size: $fs-25
+                    }
+                    &::before{
+                        content: '';
+                        position: absolute;
+                        bottom: -7px;
+                        left: 0;
+                        background-image:$colorPinkGadient;
+                        height: 2px;
+                        width: 100%;
+                        transform: scale(0)                    ;
+                        -webkit-transform: scale(0)                    ;
+                        -moz-transform: scale(0)                    ;
+                        -ms-transform: scale(0)                    ;
+                        -o-transform: scale(0)                    ;
+                        transition: all 0.5s;
+                        -webkit-transition: all 0.5s;
+                        -moz-transition: all 0.5s;
+                        -ms-transition: all 0.5s;
+                        -o-transition: all 0.5s;
+                        @include MediaQueryPhone($xs){
+                            bottom: -18px;
+                        }
+                        @include MediaQuery($xs){
+                            bottom: -12px;
+                        }
+                    }
+                    &:hover{
+                        color : $colorPink;
+                        &::before{
+                            transform: scale(1)                        ;
+                            -webkit-transform: scale(1)                        ;
+                            -moz-transform: scale(1)                        ;
+                            -ms-transform: scale(1)                        ;
+                            -o-transform: scale(1)                        ;
+                        }
+                    }
+                }
+                .active{
+                    color : $colorPink;
+                    &::before{
+                        transform: scale(1)                    ;
+                        -webkit-transform: scale(1)                    ;
+                        -moz-transform: scale(1)                    ;
+                        -ms-transform: scale(1)                    ;
+                        -o-transform: scale(1)                    ;
+}
+                }
+            }
+            
+        }
+    }
+    .content__list{
+        margin-top: $mg-45;
+        .content__list-item{
+            .item__img{
+                position: relative;
+                padding: 0;
+                &::before{
+                    content: '';
+                    background-color: $colorDark;
+                    opacity: 0;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    transition: all 0.5s                ;
+                    -webkit-transition: all 0.5s                ;
+                    -moz-transition: all 0.5s                ;
+                    -ms-transition: all 0.5s                ;
+                    -o-transition: all 0.5s                ;
+                }
+                img{
+                    width: 100%;
+                }
+                .item__btn{
+                    position: absolute;
+                    transform: translate(-50%,-50%)                ;
+                    -webkit-transform: translate(-50%,-50%)                ;
+                    -moz-transform: translate(-50%,-50%)                ;
+                    -ms-transform: translate(-50%,-50%)                ;
+                    -o-transform: translate(-50%,-50%)                ;
+                    top: 50%;
+                    left: 50%;
+                    background-color: transparent;
+                    border: 1px solid $colorPink;
+                    @include text($colorPink,$fs-15,500);
+                    padding: $pd-10 $pd-15;
+                    display: none;
+                    transition:all 0.5s;
+                    -webkit-transition:all 0.5s;
+                    -moz-transition:all 0.5s;
+                    -ms-transition:all 0.5s;
+                    -o-transition:all 0.5s;
+                    &:hover{
+                        background-image: $colorPinkGadient;
+                        color: $colorWhite;
+                    }
+                }
+                &:hover{
+                    &::before{
+                        opacity: 0.5;
+                    }
+                    .item__btn{
+                        display: block;
+                    }
+                }
+            }
+            .item__content{
+               padding: 0 $pd-30; 
+               .item-ThongTin{
+                   @include text($colorWhite,$fs-15,300);
+                   padding: $pd-05 0;
+                   margin-bottom: 0;
+               }
+               .item-Name{
+                @include text(rgba($color: $colorPink, $alpha: 0.8),$fs-20,700);
+                text-decoration: none;
+                margin-bottom: $mg-10;
+                &:hover{
+                    color : $colorPink
+                }
+               }
+               .item-title{
+                   text-align: justify;
+                   color: rgba($color: $colorWhite, $alpha: 0.7)
+               }
+            }
+            @include MediaQueryPhone($xs){
+                padding: $pd-30 $pd-35;
+                .item__content{
+                    padding: $pd-10 0;
+                    .item-ThongTin{
+                        font-size: $fs-13;
+                    }
+                    .item-Name{
+                        font-size: $fs-15;
+                        font-weight: 700;
+                    }
+                }
+            }
+            @include MediaQuery($xs){
+                margin-top: $mg-35;
+            }
+            @include MediaQuery ($lg){
+                margin-top: $mg-25;
+            }
+        }
+        .content__list-item:first-child{
+            @include MediaQuery($xs){
+                margin-top: $mg-25
+            }
+            @include MediaQuery($lg){
+                margin-top: $mg-25
+            }
+        }
+    }
+}

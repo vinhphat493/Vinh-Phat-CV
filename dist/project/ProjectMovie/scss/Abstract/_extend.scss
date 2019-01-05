@@ -1,0 +1,51 @@
+.bgCover {
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 77rem;
+    width: 100%;
+}
+
+.bgCoverNoHeight{
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.boxCenter{
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.bgSection{
+    box-shadow: 0 10px 10px $colorDark;
+    background-color: $colorBg
+}
+
+.linkHaveBoder{
+    position: relative;
+                        opacity: 0.5;
+                        transition:all 0.5s;
+                        -webkit-transition:all 0.5s;
+                        -moz-transition:all 0.5s;
+                        -ms-transition:all 0.5s;
+                        -o-transition:all 0.5s;
+                        &::before{
+                            content: "";
+                            background-color: $colorDark;
+                            width: 100%;
+                            height: 1px;
+                            position: absolute;
+                            bottom: -12px;
+                            left: 0;
+                        }
+                        &:hover{
+                            opacity: 1;
+                        }
+}

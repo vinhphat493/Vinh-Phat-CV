@@ -1,0 +1,31 @@
+#download{
+    @extend .bg-img;
+    background-image: linear-gradient(to top, $color-white, $color-light 22%, $color-ghostwhite);
+    padding: $pd-6 0 $pd-7 0;
+    &::before{
+        @extend .bg-img;
+        position: absolute;
+        content: ' ';
+        width: 100%;
+        background-image: url(../img/city.svg);
+        height: 326px;
+        background-position: top right;
+    }
+    .download-container{
+        .download-content{
+            h1{
+                @include text($color-black,$fs-4,$fw-bold);
+                line-height: 1.25;
+                letter-spacing: 0.4px;
+                text-align: left;
+                margin-bottom: 15px;
+            }
+        }
+        .download-img{
+            padding-top: $pd-7;
+            img{
+                height: 350px;
+            }
+        }
+    }
+}

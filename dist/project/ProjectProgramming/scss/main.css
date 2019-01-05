@@ -1,0 +1,80 @@
+/*
+Error: Illegal nesting: Only properties may be nested beneath properties.
+        on line 11 of D:/Phat/Front-End/ProjectProgramming/scss/Layout/_header.scss
+        from line 13 of D:\Phat\Front-End\ProjectProgramming\scss\main.scss
+
+6:     -moz-transition: all 2s;
+7:     -ms-transition: all 2s;
+8:     -o-transition: all 2s;
+9:     .navbar-brand:{
+10:         @include text($color-black,$fs-2,$fw-bold);
+11:         .navbar-logo-text{
+12:             padding: $pd-3 0 $pd-3 $pd-2;
+13:         }
+14:     }
+15:     .navbar-nav{
+16:         padding-top: $pd-2;
+
+Backtrace:
+D:/Phat/Front-End/ProjectProgramming/scss/Layout/_header.scss:11
+D:\Phat\Front-End\ProjectProgramming\scss\main.scss:13
+F:/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/check_nesting.rb:15:in `visit'
+F:/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+F:/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `map'
+F:/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+F:/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/check_nesting.rb:51:in `visit_children'
+F:/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:38:in `visit'
+F:/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/check_nesting.rb:17:in `visit'
+F:/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+F:/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `map'
+F:/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+F:/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/check_nesting.rb:51:in `visit_children'
+F:/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:38:in `visit'
+F:/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/check_nesting.rb:17:in `visit'
+F:/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+F:/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `map'
+F:/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+F:/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/check_nesting.rb:51:in `visit_children'
+F:/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+F:/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/check_nesting.rb:59:in `visit_root'
+F:/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+F:/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/check_nesting.rb:17:in `visit'
+F:/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:24:in `visit'
+F:/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:328:in `block in visit_import'
+F:/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:88:in `block in with_import'
+F:/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+F:/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:88:in `with_import'
+F:/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:326:in `visit_import'
+F:/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+F:/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+F:/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
+F:/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+F:/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
+F:/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
+F:/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+F:/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `map'
+F:/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+F:/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
+F:/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+F:/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
+F:/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+F:/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
+F:/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+F:/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:161:in `visit'
+F:/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:10:in `visit'
+F:/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:36:in `css_tree'
+F:/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+F:/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+F:/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:307:in `render_with_sourcemap'
+F:/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:391:in `run'
+F:/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
+F:/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
+F:/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
+F:/Koala/rubygems/gems/sass-3.5.2/bin/sass:13:in `<top (required)>'
+F:/Koala/bin/sass:22:in `load'
+F:/Koala/bin/sass:22:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Illegal nesting: Only properties may be nested beneath properties.\A         on line 11 of D:/Phat/Front-End/ProjectProgramming/scss/Layout/_header.scss\A         from line 13 of D:\Phat\Front-End\ProjectProgramming\scss\main.scss\A \A 6:     -moz-transition: all 2s;\A 7:     -ms-transition: all 2s;\A 8:     -o-transition: all 2s;\A 9:     .navbar-brand:{\A 10:         @include text($color-black,$fs-2,$fw-bold);\A 11:         .navbar-logo-text{\A 12:             padding: $pd-3 0 $pd-3 $pd-2;\A 13:         }\A 14:     }\A 15:     .navbar-nav{\A 16:         padding-top: $pd-2;"; }
