@@ -1,3 +1,7 @@
+body{
+    overflow-x: hidden;
+}
+
 /* BEGIN HEADER */
 .header{
     height: 4.5rem;
