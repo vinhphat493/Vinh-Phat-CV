@@ -8,10 +8,14 @@
 	<meta charset="UTF-8">
 
 
+
 	<!-- Font -->
 
 	<link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700%7CAllura" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+
+	<!-- font-awesome -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
 	<!-- Stylesheets -->
 
@@ -26,11 +30,14 @@
 
 	<link href="./css/responsive.css" rel="stylesheet">
 
+	<!-- navbar-fiexd css -->
+	<link rel="stylesheet" href="./css/navbar-fixed.css">
+
 </head>
 
 <body>
 
-	<section class="intro-section">
+	<section class="intro-section" id="intro">
 		<div class="container">
 
 			<div class="heading-wrapper" id="myNavbar">
@@ -47,22 +54,22 @@
 							<div class="collapse navbar-collapse" id="collapsibleNavId">
 								<ul class="navbar-nav ml-auto mt-2 mt-lg-0">
 									<li class="nav-item">
-										<a class="nav-link active" href="#">HOME</a>
+										<a class="nav-link active" href="#" id="home">Home</a>
 									</li>
 									<li class="nav-item">
 										<a class="nav-link" href="#about">ABOUT</a>
 									</li>
 									<li class="nav-item">
-											<a class="nav-link" href="#experience">EXPERIENCE</a>
-										</li>
+										<a class="nav-link" href="#experience">EXPERIENCE</a>
+									</li>
 									<li class="nav-item">
 										<a class="nav-link" href="#portfolio">PORTFOLIO</a>
 									</li>
 									<li class="nav-item">
-											<a class="nav-link" href="#education">EDUCATION</a>
-										</li>
+										<a class="nav-link" href="#education">EDUCATION</a>
+									</li>
 									<li class="nav-item">
-										<a class="nav-link" href="#footer">CONTACT</a>
+										<a class="nav-link" href="#contact">CONTACT</a>
 									</li>
 								</ul>
 							</div>
@@ -75,7 +82,7 @@
 				<div class="row">
 
 					<div class="col-sm-8 col-md-4 col-lg-3">
-						<div class="profile-img margin-b-30"><img src="images/profile-1-250x250.jpg" alt=""></div>
+						<div class="profile-img margin-b-30"><img src="images/avatar.png" alt=""></div>
 					</div><!-- col-sm-8 -->
 
 					<div class="col-sm-10 col-md-4 col-lg-6">
@@ -223,9 +230,9 @@
 				</div><!-- p-item -->
 
 				<div class="p-item html5">
-					<a href="./project/Housing/index.html"  class="item-link">
+					<a href="./project/Housing/index.html" class="item-link">
 						<img src="images/bootstrap4-3.png" alt="">
-					<div class="img_overlay">
+						<div class="img_overlay">
 							<div class="overlay_content">
 								<p>Housing</p>
 							</div>
@@ -234,9 +241,9 @@
 				</div><!-- p-item -->
 
 				<div class="p-item bootstrap">
-					<a href="./project/MercedesBenz/index.html"  class="item-link">
+					<a href="./project/MercedesBenz/index.html" class="item-link">
 						<img src="images/sass.png" alt="">
-					<div class="img_overlay">
+						<div class="img_overlay">
 							<div class="overlay_content">
 								<p>Mercedes-Benz</p>
 							</div>
@@ -245,9 +252,9 @@
 				</div><!-- p-item -->
 
 				<div class="p-item bootstrap">
-					<a href="./project/ProjectMovie/index.html"  class="item-link">
+					<a href="./project/ProjectMovie/index.html" class="item-link">
 						<img src="images/sass2.png" alt="">
-					<div class="img_overlay">
+						<div class="img_overlay">
 							<div class="overlay_content">
 								<p>Movie Project</p>
 							</div>
@@ -256,9 +263,9 @@
 				</div><!-- p-item -->
 
 				<div class="p-item bootstrap">
-					<a class="img" href="./project/ProjectProgramming/"  class="item-link">
+					<a class="img" href="./project/ProjectProgramming/" class="item-link">
 						<img src="images/bootstrap4.1.png" alt="">
-					<div class="img_overlay">
+						<div class="img_overlay">
 							<div class="overlay_content">
 								<p>Programming</p>
 							</div>
@@ -267,9 +274,9 @@
 				</div><!-- p-item -->
 
 				<div class="p-item bootstrap">
-					<a href="./project/ProjectFord/index.html"  class="item-link">
+					<a href="./project/ProjectFord/index.html" class="item-link">
 						<img src="images/bootstrap4.2.png" alt="">
-					<div class="img_overlay">
+						<div class="img_overlay">
 							<div class="overlay_content">
 								<p>Ford</p>
 							</div>
@@ -277,12 +284,12 @@
 					</a>
 				</div><!-- p-item -->
 
-				
+
 
 				<div class="p-item javascript">
-					<a href="./project/AppUber/"  class="item-link">
+					<a href="./project/AppUber/" class="item-link">
 						<img src="images/uber.png" alt="">
-					<div class="img_overlay">
+						<div class="img_overlay">
 							<div class="overlay_content">
 								<p>App Uber</p>
 							</div>
@@ -291,9 +298,9 @@
 				</div><!-- p-item -->
 
 				<div class="p-item jquery">
-					<a href="./project/ProjectElearning/app/Views/index.html"  class="item-link">
+					<a href="./project/ProjectElearning/app/Views/index.html" class="item-link">
 						<img src="images/jquery.png" alt="">
-					<div class="img_overlay">
+						<div class="img_overlay">
 							<div class="overlay_content">
 								<p>Project Elearning</p>
 							</div>
@@ -348,14 +355,66 @@
 
 	</section><!-- education-section -->
 
-	<footer>
+	<section class="contact-section section" id="contact">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-7">
+					<div class="contact_content">
+						<div class="heading">
+							<h3><b>Contact</b></h3>
+							<h6 class="font-lite-black"><b>PLEASE CONTACT ME</b></h6>
+						</div>
 
-	</footer>
+						<div class="contact_form">
+							<div class="form-group">
+								<ul class="contact_list">
+									<li>
+										<i class="fa fa-map-marker"></i>
+										<span>138/56 Ha Ton Quyen Street, Ward 4, District 11, Ho Chi Minh</span>
+									</li>
+									<li>
+										<i class="fa fa-envelope"></i>
+										<span>vinhphat493@gmail.com</span>
+									</li>
+									<li>
+										<i class="fa fa-phone-square"></i>
+										<span>0584.955.389</span>
+									</li>
+								</ul>
+							</div>
+							<div class="form-group">
+								<span>Name</span>
+								<input type="text" class="form-control">
+							</div>
+							<div class="form-group">
+								<span>Email</span>
+								<input type="email" class="form-control">
+							</div>
+							<div class="form-group">
+								<span>Messages</span>
+								<textarea class="form-control" id="textArea" rows="5"></textarea>
+							</div>
+							<div class="form-group">
+								<a href="#" class="btn-send">
+									<span>Send Messages</span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-5">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.7026122443785!2d106.65083631428692!3d10.757387262487631!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752ef2cbf716a3%3A0xe62af3b8aa12fc99!2zMTM4LzU2IEjDoCBUw7RuIFF1eeG7gW4sIFBoxrDhu51uZyA0LCBRdeG6rW4gMTEsIEjhu5MgQ2jDrSBNaW5oLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1546362740911"
+					 width="100%" height="750" frameborder="0" style="border:0;padding-top: 100px;" allowfullscreen></iframe>
+				</div>
+			</div>
+		</div>
+	</section><!-- contact-section -->
+
+	<a href="javascript:" id="return-to-top"><i class="fa fa-chevron-up"></i></a>
 
 
 	<!-- SCIPTS -->
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-	 crossorigin="anonymous"></script>
+	<script src="./js/jquery-3.3.1.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
 	 crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
@@ -374,7 +433,12 @@
 
 	<script src="./js/jquery.fluidbox.min.js"></script>
 
+	<script src="./js/navbar-fixed.js"></script>
+
+
 	<script src="./js/scripts.js"></script>
+
+
 
 </body>
 

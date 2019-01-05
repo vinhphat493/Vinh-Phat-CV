@@ -153,7 +153,10 @@ b.max-bold{ font-weight: 700; }
 
 .intro{ color: #fff; }
 
-.intro .profile-img{ max-width: 400px; border-radius: 5px; overflow: hidden; }
+.intro .profile-img{ 
+	max-width: 400px; 
+	border-radius: 5px ; 
+	overflow: hidden; }
 
 .intro #myName {
 	font-family: 'Roboto Condensed', sans-serif!important;
@@ -300,5 +303,103 @@ b.max-bold{ font-weight: 700; }
 8. FOOTER
 --------------------------------- */
 
-.copyright{ text-align: center; padding: 30px 0; background: #28023D; }
+.contact-section .form-group {
+	margin-bottom: 1.5rem;
+}
 
+.contact-section .form-group .contact_list li{
+	display: block!important;
+	margin-bottom: 1rem;
+}
+
+.contact-section .form-group .contact_list li i{
+	font-size: 1.4rem;
+}
+
+.contact-section .form-group .contact_list li span{
+	margin-left: 15px;
+}
+
+.contact-section .form-group .contact_list li:first-child span{
+	margin-left: 25px;
+}
+
+.contact-section .form-group .contact_list li:last-child span{
+	margin-left: 19px;
+}
+
+.contact-section .form-group span{
+	margin-bottom: 1rem;
+}
+
+.contact-section .form-group .form-control:focus{
+	box-shadow: none;
+	border-color: grey;
+}
+
+.contact-section .form-group .btn-send {
+	padding: 15px 30px; 
+	border-radius: 4px; 
+	float: left;
+	margin-top: 30px;
+	box-shadow: inset 0 0px 4px rgba(0,0,0,.3); 
+	background: #FFAD01; 
+	color: #fff; 
+	-webkit-transition: all .2s ease; 
+	transition: all .2s ease;
+}
+
+.contact-section .form-group .btn-send:hover{
+	color: white;
+	-webkit-transform: translateY(-4px); 
+	transform: translateY(-4px);
+}
+
+.contact-section .form-group .btn-send span{
+	margin:0;
+}
+
+/* ---------------------------------
+8. Return-to-top
+--------------------------------- */
+
+#return-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.7);
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top i {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 16px;
+    top: 13px;
+    font-size: 19px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top:hover {
+    background: rgba(0, 0, 0, 0.9);
+}
+#return-to-top:hover i {
+    color: #fff;
+    top: 5px;
+}

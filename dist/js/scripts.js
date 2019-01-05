@@ -8,17 +8,32 @@
 		$(this).addClass("active");
 	})
 
-	window.onscroll = function () { scrollFunction() };
-
-	function scrollFunction() {
-		if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+	// ===== Scroll to Top ==== 
+	$(window).scroll(function () {
+		if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
+			$('#return-to-top').fadeIn(200);    // Fade in the arrow
 			$("#myNavbar").addClass("fixed-top");
-			$("#myNavbar").addClass("heading-wrapper-active");			
+			$("#myNavbar").addClass("heading-wrapper-active");
 		} else {
+			$('#return-to-top').fadeOut(200);   // Else fade out the arrow
+			$(".intro-section .nav-link").removeClass("active");
+			$('#home').addClass("active");
 			$("#myNavbar").removeClass("fixed-top");
 			$("#myNavbar").removeClass("heading-wrapper-active");
 		}
-	}
+	});
+	$("#home").click(function(){
+		$(this).addClass("active");
+		$('body,html').animate({
+			scrollTop: 0                       // Scroll to top of body
+		}, 500);
+	})
+	$('#return-to-top').click(function () {      // When arrow is clicked
+		$('body,html').animate({
+			scrollTop: 0                       // Scroll to top of body
+		}, 500);
+	});
+
 
 
 	// LINE PROGRESS BAR
