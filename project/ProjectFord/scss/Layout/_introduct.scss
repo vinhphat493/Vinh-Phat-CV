@@ -1,0 +1,167 @@
+#myIntroduct{
+    text-align: center;
+    overflow: hidden;
+    .intro-version{
+        h1{
+            margin: $mg-4 0 $mg-2 0 ;
+            font-size: $fs-7;
+        }
+        .col-md-6{
+            padding: $pd-5;
+            .intro-version-item{
+                color: $color-blue; 
+                &:hover{
+                    color: $color-navy;
+                    text-decoration: none;
+                }
+                img{
+                    width: 70%;
+                    height: auto;
+                }
+                p{
+                    font-size: $fs-5;
+                    font-weight: $fw-normal;
+                    margin: $mg-2 0 ;
+                    span{
+                        font-weight: $fw-bold;
+                        font-size: $fs-6;
+                    }
+                }
+            }
+        }
+    }
+    .intro-deal{
+        @extend .bg;
+        background-image: url(../img/bg_see_all_offer.jpeg);
+        height: 200px;
+        position: relative;
+        .intro-deal-container{
+            text-align: center!important;
+            height: 80%;
+            @extend .group_absolute;
+            a{
+                margin: 0 auto;
+                color: $color-white;
+                &:hover{
+                    text-decoration: none;
+                }
+                h1{
+                    font-size: $fs-7;
+                    word-spacing: 5px;
+                    letter-spacing: 5px;
+                }
+                p{
+                    font-size: $fs-3;   
+                    span{
+                        margin-left: $mg-1;
+                        font-size: $fs-4;
+                    }
+                }
+            }
+        }
+    }
+    .intro-build{
+        @extend .bg;
+        background-image: (url(../img/makes_it_you.jpeg));
+        height: 700px;
+        position: relative;
+        .intro-build-container{
+            @extend .group_absolute;
+            h2{
+                @include text($color-white,$fs-7,$fw-normal);
+                word-spacing: 2px;
+                letter-spacing: 5px;
+                margin-bottom: $mg-3;
+            }
+        }
+    }
+    .intro-function{
+        position: relative;
+        .intro-function-sologan{
+            @extend .group_absolute;
+            text-align: center;
+            letter-spacing: 2px;
+            color: $color-dark;
+            font-weight: $fw-bold;
+            width: 80%;
+            h2{
+                color:$color-black!important;
+            }
+        }
+        .intro-function-link{
+            width: 100%;
+            height: auto;
+            &:hover img
+{
+                transform:   scale(1.1)          ;
+                -webkit-transform:   scale(1.1)          ;
+                -moz-transform:   scale(1.1)          ;
+                -ms-transform:   scale(1.1)          ;
+                -o-transform:   scale(1.1)          ;
+            }
+            .intro-function-item{
+                position: relative;
+                overflow: hidden;
+                img{
+                    transition:all 2s 0.1s;
+                    -webkit-transition:all 2s 0.1s;
+                    -moz-transition:all 2s 0.1s;
+                    -ms-transition:all 2s 0.1s;
+                    -o-transition:all 2s 0.1s;
+}
+                .intro-function-item-link{
+                    position: absolute;
+                    bottom: 0;
+                    padding: $pd-tile;
+                    background-color: $color-opacity-blue;
+                    width: 100%;
+                    text-align: left;
+                    color: $color-white!important;
+                    span:first-child{
+                        vertical-align: middle;
+                        margin-top: $mg-1;
+                        display: inline-block;
+                    }
+                    span:nth-child(2){
+                        float: right;
+                        margin-right: $mg-1;
+                        display: block;
+                        background-color: transparent;
+                        border: 2px solid $color-white;
+                        height: 30px;
+                        width: 30px;
+                        border-radius: 50%                ;
+                        -webkit-border-radius: 50%                ;
+                        -moz-border-radius: 50%                ;
+                        -ms-border-radius: 50%                ;
+                        -o-border-radius: 50%                ;
+                        position: relative;
+                        text-align: center;
+                        line-height: 25px;
+                        font-size: $fs-3;
+                        font-weight: $fw-bold;  
+                        &:hover{
+                            background-color: $color-white;
+                            color: $color-blue;
+                        }
+                    }
+                }
+            }
+            .item-2{
+                .intro-function-item-link{
+                    span:first-child{
+                        font-size: $fs-5;
+                        letter-spacing: 3px;
+                    }
+                    span:nth-child(2){
+                        height: 50px;
+                        width: 50px;
+                        line-height: 45px;
+                        font-size: $fs-6;
+                    }
+                } 
+            }
+        }
+        
+    }
+}

@@ -1,0 +1,207 @@
+#footer{
+    
+    .disclosures{
+        text-align: center;
+        overflow: hidden;
+        h1{
+            padding: $pd-5 $pd-3;
+            
+        }
+        .disclosures-container{
+            background-color: $color-light;
+            display: none;
+            
+            ul{
+                text-align: left;
+                padding: $pd-3 $pd-6;
+                list-style-type: none;
+                max-height: 250px;
+                overflow-y: scroll;
+                font-size: $fs-1;
+                color:$color-dark;
+                line-height: 15px;
+            }
+        }
+    }
+    .disclosures-active{
+        display: block!important;
+    }
+    .active-icon-disclosures{
+        transform:       rotate(180deg)      ;
+        -webkit-transform:       rotate(180deg)      ;
+        -moz-transform:       rotate(180deg)      ;
+        -ms-transform:       rotate(180deg)      ;
+        -o-transform:       rotate(180deg)      ;
+    }
+    .navbar-footer{
+        padding: $pd-5 0;
+        background-color: $color-footer-navbar;
+        .navbar-footer-serach{
+            span{
+                margin-right: $mg-3;
+                i{
+                    font-size: $fs-6;
+                    color: $color-white;
+                }
+            }   
+            input{
+                border:none;
+                background-color: transparent;
+                font-size: $fs-5;
+            }
+            ::-ms-input-placeholder{
+                color:$color-white;
+            }
+            ::-webkit-input-placeholder{    
+                color:$color-white;
+            }
+        }
+        .navbar-nav{
+            li{
+                padding: 0 $pd-0;
+                a{
+                    line-height: 42px;
+                    color:$color-gray;
+                    vertical-align: middle;
+                    padding: 0;
+                    &:hover{
+                        color:$color-white;
+                        text-shadow: 0 0 0.4px #fff, 0 0 0.4px #fff;
+                    }
+                }
+            }
+            .active{
+                span{
+                    @include text($color-white,$fs-1,$fw-bold);
+                    vertical-align: middle;
+                }
+            }
+        }
+    }
+    .footer-body{
+        padding-top: $pd-4;
+        padding-bottom: $pd-8;
+        background-color: $color-footer-body;
+        height: 600px;
+        .footer-body-list{
+            .footer-body-list-item{
+                list-style-type: none;
+                color : $color-white;
+                >li{
+                float: left;
+                margin: $mg-2 0;
+                padding: 0 $pd-5;
+                span{
+                    display: inline-block;
+                    margin-bottom: $mg-4;
+                    font-size: $fs-4;
+                }
+                }
+                .footer-body-list-item-child{
+                    list-style-type: none;
+                    >li{
+                        padding-bottom: $pd-a;
+                        a{
+                            font-size: $fs-2;
+                            color : $color-grey;
+                            &:hover{
+                                text-decoration: none;
+                                color : $color-white;
+                            }
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+    .footer-end{
+        padding-bottom: $pd-4;
+        .footer-end-follow{
+            background-color: $color-navy;
+            height: 120px;
+            .navbar{
+                padding: 0;
+                .footer-end-follow-nav-left{
+                    display: flex;
+                    padding: 0;
+                    color: $color-white;
+                    p{
+                        margin-bottom: 0;
+                        margin-right: $mg-4;
+                        line-height: 40px;
+                    }
+                    .nav-link{
+                        padding: 0;
+                        margin: 0 $mg-1;
+                        width: 40px;
+                        height: 40px;
+                    }
+                }
+                .navbar-nav {
+                    .nav-link{
+                        span:first-child{
+                            display: inline-block;
+                            width: 40px;
+                            height: 40px;
+                        }
+                        span:nth-child(2){
+                            @include text($color-blue,$fs-4,$fw-normal);
+                            
+                        }
+                    }
+                }
+            }
+        }
+        .footer-end-info{
+            background-color: $color-light;
+            padding: $pd-4 0 $pd-6 0;
+            .change-language{
+                .navbar-brand{
+                    padding: 0; 
+                    span:first-child{
+                        @include text ($color-blue,$fs-6,$fw-normal);   
+                        display: inline-block;
+                        margin-right: $mg-3;
+                    }
+                    span:nth-child(2){
+                        @include text ($color-blue,$fs-2,$fw-normal);
+                        text-decoration: underline;
+                    }
+                    &:hover{
+                        span{
+                            color: $color-footer-navbar;
+                        }
+                    }
+                }
+                .navbar-nav{
+                    .nav-link{
+                        height: auto;
+                        display: flex;
+                        align-items: center;
+                        padding: 0;
+                        .footer-logo{
+                            background-image: url(../img/logo.png);
+                            @include bg-img(600px,0,95px,40px,400px,200px);
+                            display: inline-block;
+                            margin-right: $mg-3
+                        }
+                        .footer-logo-text{
+                            @include text($color-navy,$fs-2,$fw-bold);
+                        }
+                    }
+                }
+            }
+            .inFormation{
+                margin-top: $mg-4;
+                .nav-link{
+                    @include text($color-footer-body,$fs-2,$fw-normal);
+                    &:hover{
+                        color: $color-navy;
+                    }
+                }
+            }
+        }
+    }
+    
+}

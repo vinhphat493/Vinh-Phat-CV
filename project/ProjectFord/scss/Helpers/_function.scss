@@ -1,0 +1,7 @@
+@for $thamso from 0 through 4 {
+    .icon-#{$thamso}{
+        background-image: url(../img/logo.png);
+        @include bg-img($thamso*-40px,0,40px,40px,400px,200px);
+        display: inline-block;
+    }
+}

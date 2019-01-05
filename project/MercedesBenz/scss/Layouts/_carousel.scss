@@ -1,0 +1,22 @@
+.cover{
+  .carousel-caption{
+    bottom: unset;
+    right:unset;
+    top: 50px;
+    left: 7%;
+    animation: fadeInDown 1s forwards 0s linear;
+    .line{
+      width: 20%;
+      height: 4px;
+      background-color: $color-white;
+      margin-bottom: $mg-2;
+    }
+    h1{
+      font-size: $fs-4;
+      margin-bottom: $mg-2;
+    }
+    .text-gray{
+      @include text($color-grey, $fs-4, $fw-normal);
+    }
+  }
+}

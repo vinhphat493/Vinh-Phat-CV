@@ -1,0 +1,66 @@
+.product{
+  background-color: $color-black;
+  margin-top: -14rem;
+  .product__title{
+    padding-top: 14rem;
+    @include text($color-white, $fs-4, $fw-normal);
+  }
+  .product__nav{
+    width: fit-content;
+    margin: 0 auto;
+    .product__tab{
+      background: linear-gradient(#303030, $color-dark)!important;
+      border: 1px outset $color-dark;
+      &.active{
+        color: $color-blue!important;
+      }
+      &:not(active){
+        color: $color-grey!important;
+      }
+    }
+  }
+  .pd-0{
+    padding: 0 5px;
+  }
+  .--one{
+    @include background__product(url(../img/xe-1.png));
+  }
+  .--two{
+    @include background__product(url(../img/xe-2.png));
+  }
+  .--three{
+    @include background__product(url(../img/xe-3.png));
+  }
+  .--four{
+    @include background__product(url(../img/xe-4.png));
+  }
+  .--five{
+    @include background__product(url(../img/xe-5.png));
+  }
+  .--six{
+    @include background__product(url(../img/xe-6.png));
+  }
+
+  .product__content{
+    position: absolute;
+    bottom: 0;
+    left:0;
+    background-color: $color-black-light;
+    //transition: all 1s;
+    h3{
+      @include text($color-white, $fs-3, $fw-normal);
+    }
+    p{
+      @include text($color-white, $fs-1, $fw-normal);
+      transition: all 1s;
+    }
+  }
+  .product__item:hover{
+    .product__content{
+      background-color: $color-black-dark;
+      p{
+        padding-bottom: 80px;
+      }
+    }
+  }
+}
