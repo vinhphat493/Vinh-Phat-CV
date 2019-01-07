@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CyberSoft Academy</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon.png">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./assets/Vendors/Particles/particles.css">
+    <link rel="stylesheet" href="./assets/Vendors/Loader/styleLoaderIndex.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <button id="myBtn" title="Go to top">
+        <i class="fa fa-plane"></i>
+    </button>
+    <!-- BEGIN HEADER -->
+    <header id="header">
+        <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="index.html">
+                <img src="./assets/img/logo.png" alt="hinhLogo">
+            </a>
+            <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+                aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2 " type="text" id="timkhoahoc" placeholder="Tìm khóa học">
+                    <button class="btn btn-outline-dark my-2 my-sm-0">Search</button>
+                    <div id="divItemSearch" class="border border-dark rounded">
+                        <p id="titleSearch"></p>
+                        <div class="container px-0 mx-0" id="listDSKHTK">
+
+                        </div>
+                    </div>
+                </form>
+                <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Trang Chủ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./app/Views/layouts/gioithieu.html">Giới Thiệu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="danhsachkhoahoc" href="./app/Views/layouts/danhsachkhoahoc.html">Khóa Học</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./app/Views/layouts/lienhe.html">Liên Hệ</a>
+                    </li>
+                    <li class="nav-item" id="dontLogin">
+                        <a class="nav-link" id="btnLogin" href="#">Đăng Nhập</a>
+                    </li>
+                    <li class="nav-item dropdown" id="doneLogin">
+                        <a class="nav-link dropdown-toggle waves-effect waves-dark profile-pic" href="" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false" id="tenUserLogin">
+
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="./app/Views/user.html" id="ttUser"><i class="fa fa-cog mr-2"></i>Cài
+                                Đặt</a>
+                            <a class="dropdown-item" href="#" id="logOut"><i class="fa fa-sign-out mr-2"></i>Thoát</a>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+    </header>
+    <!-- END HEADER -->
+
+    <!-- BEGIN SLIDER -->
+    <section class="slider" id="pageSlider">
+        <div class="over-slider" id="particles-js"></div>
+        <div class="slider-caption text-center">
+            <h1 class="display-4">CYBERSOFT</h1>
+            <p>Đào Tạo Chuyên Viên Lập Trình</p>
+            <div class="cssload-container" id="ghidanhLoader">
+                <div class="cssload-l">L</div>
+                <div class="cssload-circle"></div>
+                <div class="cssload-square"></div>
+                <div class="cssload-triangle"></div>
+                <div class="cssload-i">I</div>
+                <div class="cssload-n">N</div>
+                <div class="cssload-g">G</div>
+            </div> 
+        </div>
+    </section>
+    <!-- END SLIDER -->
+
+    <!-- BEGIN MAIN -->
+    <main id="mainContent">
+        <!-- BEGIN ĐIỂM ƯU VIỆT -->
+        <section id="diemuuviet" class="pt-5">
+            <div class="bg-image2"></div>
+            <div class="bg-over"></div>
+            <div class="container diemuuvietItem">
+                <div class="row">
+                    <div class="col-lg-9 col-12">
+                        <div id="titleDiemUuViet" class="text-right pb-5">
+                            <h1>Điểm ưu việt</h1>
+                            <h4>CHỈ CÓ TẠI CYBERSOFT</h4>
+                        </div>
+                    </div>
+                    <div class="col-md-3"></div>
+                </div>
+                <div class="row">
+
+                    <div class="col-lg-7 col-12">
+                        <div class="block">
+                            <div class="number">1</div>
+                            <h4>
+                                Học theo lộ trình, có định hướng
+                            </h4>
+                            <p>
+                                CyberSoft sẽ định hướng và đưa ra các lộ trình học tập cho nghề bạn theo đuổi. Phát
+                                triển năng lực và niềm đam
+                                mê
+                                cảm hứng lập trình của bạn.
+                            </p>
+                        </div>
+                        <div class="block">
+                            <div class="number">2</div>
+                            <h4>
+                                Nền tảng, tư duy, cốt lõi trong lập trình
+                            </h4>
+                            <p>
+                                CyberSoft cung cấp những nền tảng, giá trị tư duy cốt lõi nhất trong lập trình. Bạn sẽ
+                                tự tin trước sự thay đổi
+                                của công nghệ và môi trường làm việc.
+                            </p>
+                        </div>
+                        <div class="block">
+                            <div class="number">3</div>
+                            <h4>
+                                Mài giũa bạn qua kinh nghiệm, dự án thực tế
+                            </h4>
+                            <p>
+                                Đội ngũ Giảng viên và các Mentor là những người dày dạn kinh nghiệm qua các dự án thực
+                                tế tại các công ty lớn
+                                sẽ
+                                truyền đạt những kinh nghiệm "máu lửa" cho bạn.
+                            </p>
+                        </div>
+                        <div class="block">
+                            <div class="number">4</div>
+                            <h4>
+                                Teamwork, Scrum - Agile. Mentor tận tâm
+                            </h4>
+                            <p>
+                                Bạn sẽ được giao dự án và làm theo Teamwork ngay từ ngày đầu tiên. Đóng vai trò một
+                                thành viên trong qui trình
+                                Scrum, Agile. Được Mentor hỗ trợ tân tâm, nhiệt tình.
+                            </p>
+                        </div>
+                        <div class="block">
+                            <div class="number">5</div>
+                            <h4>
+                                Công nghệ mới, chuyên sâu, thực tế
+                            </h4>
+                            <p>
+                                Bạn được học và trải nghiệm các công nghệ lập trình mới nhất, chuyên sâu, bám sát nhu
+                                cầu tuyển dụng thực tế từ
+                                doanh nghiệp.
+                            </p>
+                        </div>
+                        <div class="block">
+                            <div class="number">6</div>
+                            <h4>
+                                Trao tay chìa khóa thành công toàn diện
+                            </h4>
+                            <p>
+                                Hướng dẫn viết CV, phỏng vấn. Kết nối doanh nghiệp, gặp gỡ doanh nghiệp, phỏng vấn cùng
+                                doanh nghiệp ngay sau
+                                khi tốt nghiệp.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END ĐIỂM ƯU VIỆT -->
+
+        <!-- BEGIN KHOAHOC -->
+        <section id="khoahoc">
+            <div class="container px-5 pt-5">
+                <div class="title-khoahoc text-center">
+                    <h1 class="display-4">Các công nghệ được học tại</h1>
+                    <span>CyberSoft</span>
+                    <p>CyberSoft luôn cung cấp cho học viên những khóa học chất lượng nhất,
+                        với mong muốn truyền đạt cho học viên những kinh nghiệm quý báu nhất</p>
+                </div>
+                <div class="owl-carousel owl-theme">
+                    <div class="item">
+                        <img src="./assets/img/html5.png" alt="hinhKhoahoc" class="img-fluid">
+                    </div>
+                    <div class="item">
+                        <img src="./assets/img/JS.png" alt="hinhKhoahoc" class="img-fluid">
+                    </div>
+                    <div class="item">
+                        <img src="./assets/img/angularjs.png" alt="hinhKhoahoc" class="img-fluid">
+                    </div>
+                    <div class="item">
+                        <img src="./assets/img/nodejs.png" alt="hinhKhoahoc" class="img-fluid">
+                    </div>
+                    <div class="item">
+                        <img src="./assets/img/reactjs.png" alt="hinhKhoahoc" class="img-fluid">
+                    </div>
+                    <div class="item">
+                        <img src="./assets/img/java.png" alt="hinhKhoahoc" class="img-fluid">
+                    </div>
+                    <div class="item">
+                        <img src="./assets/img/android.png" alt="hinhKhoahoc" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- END KHOAHOC -->
+
+        <!-- BEGIN HOC VIEN -->
+        <section id="hocvien" class="pt-5">
+            <div class="container">
+                <div class="title-hocvien text-center">
+                    <h1 class="display-4">Học Viên Nói Gì Về CyberSoft</h1>
+                </div>
+                <div class="row hocvien">
+                    <div class="col-12 itemHocVien">
+                        <img src="./assets/img/4.png" alt="HinhCamNhanHocVien">
+                    </div>
+                    <div class="col-md-8 col-12 itemHocVien">
+                        <img src="./assets/img/3.png" alt="HinhCamNhanHocVien">
+                    </div>
+                    <div class="col-md-4 col-12 itemHocVien">
+                        <img src="./assets/img/2.png" alt="HinhCamNhanHocVien">
+                    </div>
+                    <div class="col-md-8 col-12 itemHocVien">
+                        <img src="./assets/img/5.png" alt="HinhCamNhanHocVien">
+                    </div>
+                    <div class="col-md-4 col-12 itemHocVien">
+                        <img src="./assets/img/6.png" alt="HinhCamNhanHocVien">
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <!-- END HOC VIEN -->
+    </main>
+    <!-- END MAIN -->
+
+
+    <!-- Begin modal form Login & SignUp -->
+    <button type="button" id="modalDangNhap" class="btn btn-primary d-none" data-toggle="modal" data-target="#myModal">
+        Open modal
+    </button>
+
+    <!-- The Modal -->
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <!-- Modal form Login/SignUp -->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 left">
+                            <div class="bgOver"></div>
+                            <div class="inner text-center">
+                                <h3 id="title-left">Bạn chưa có tài khoản CyberSoft</h3>
+                                <div class="form-group text-center mt-4">
+                                    <a href="#" class="btnModal btnLeft btnSignUp" id="signUpUser">Đăng Ký</a>
+                                </div>
+                                <div class="form-group text-center mt-4">
+                                    <a href="#" class="btnModal btnLeft" id="loginUser">Đăng Nhập</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 right">
+                            <a href="#" class="closeModal" data-dismiss="modal">
+                                <i class="fa fa-times"></i>
+                            </a>
+                            <div class="inner" id="formLogin">
+                                <h2>Đăng Nhập</h2>
+                                <form action="" id="formLoginVal">
+                                    <div class="form-group p-2" id="divError">
+                                        <h5 id="errorText"></h5>
+                                    </div>
+                                    <div class="form-group rightInput divIdUser">
+                                        <span>
+                                            <i class="fa fa-user-circle-o"></i>
+                                        </span>
+                                        <input type="text" autofocus="flase" class="form-control" placeholder="Tên Đăng Nhập"
+                                            id="idUser" name="idUser" required>
+                                        <span class="error" id="errorID">Vui lòng nhập tài khoản</span>
+                                    </div>
+                                    <div class="form-group rightInput divPassword">
+                                        <span>
+                                            <i class="fa fa-lock"></i>
+                                        </span>
+                                        <input type="password" placeholder="Mật Khẩu" class="form-control" id="pwdUser"
+                                            required>
+                                        <span class="error" id="errorPass">Vui lòng nhập mật khẩu</span>
+                                    </div>
+                                    <div class="right-rememberCheck">
+                                        <div class="form-check-inline" id="right-Check">
+                                            <input type="checkbox" id="rememberID" class="form-check-input" value="">
+                                            <label class="form-check-label">
+                                                Ghi nhớ tài khoản
+                                            </label>
+                                        </div>
+                                        <a href="#" id="right-QuenMK">
+                                            Quên mật khẩu ?
+                                        </a>
+                                    </div>
+                                    <div class="form-group text-center mt-4 rightFooterFirst">
+                                        <a href="#" class="btnModal btnRight" id="login">Đăng Nhập</a>
+                                    </div>
+                                </form>
+                            </div>
+
+                            <div class="inner" id="formQuenMK">
+                                <h2>Lấy lại mật khẩu</h2>
+                                <p class="text-center formQuenMK-content">
+                                    Để lấy lại mật khẩu, bạn nhập email đăng nhập vào ô dưới đây. Sau đó CyberSoft sẽ
+                                    gửi email hướng dẫn bạn khôi phục mật khẩu
+                                </p>
+                                <div class="form-group rightInput">
+                                    <span>
+                                        <i class="fa fa-envelope"></i>
+                                    </span>
+                                    <input type="text" autofocus="flase" class="form-control" placeholder="Email của bạn"
+                                        id="emailQuenMK">
+                                </div>
+                                <div class="form-group text-center mt-4 rightFooterQuenMK">
+                                    <a href="#" class="btnModal btnRight" id="btnQuenMK">Tiếp tục</a>
+                                </div>
+                            </div>
+
+                            <div class="inner" id="formSignUP">
+                                <h2>Đăng Ký</h2>
+                                <div class="form-group rightInput">
+                                    <span>
+                                        <i class="fa fa-user-circle-o"></i>
+                                    </span>
+                                    <input type="text" autofocus="flase" class="form-control" placeholder="Tên Đăng Nhập"
+                                        id="idUserNew">
+                                    <span class="error" id="error-idUserNew">Tên đăng nhập không được để trống!</span>
+                                </div>
+                                <div class="form-group rightInput">
+                                    <span>
+                                        <i class="fa fa-lock"></i>
+                                    </span>
+                                    <input type="password" placeholder="Mật Khẩu" class="form-control" id="pwdUserNew">
+                                    <span class="error" id="error-pwdUserNew">Mật khẩu không được để trống!</span>
+                                </div>
+                                <div class="form-group rightInput">
+                                    <span>
+                                        <i class="fa fa-lock"></i>
+                                    </span>
+                                    <input type="password" placeholder="Nhập Lại Mật Khẩu" class="form-control" id="pwdUserNewP2">
+                                    <span class="error" id="error-pwdUserNewP2">Mật khẩu không được để trống!</span>
+                                </div>
+                                <div class="form-group text-center mt-4 rightFooterFirst" id="divBtnSignUp">
+                                    <a href="#" class="btnModal btnRight" id="signUp">Đăng Ký</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal Footer -->
+                <div class="modal-footer p-0" id="modalFooter">
+                    <div class="form-group text-center col-12">
+                        <p class="mb-0 mt-2">Nếu Chưa Có Tài Khoản</p>
+                        <i class="fa fa-hand-o-down"></i>
+                        <a href="#" class="btnModal btnRespon d-block btnSignUp" id="signUpRespon">Đăng Ký</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End modal form Login & SignUp -->
+
+    <!-- link admin -->
+    <a href="./app/Views/admin/main/index.html" class="d-none" id="linkAdmin">Admin Link</a>
+    <!-- link admin -->
+
+    <!-- BEGIN FOOTER -->
+    <footer id="footer" class="pt-5 mt-5">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4 col-12 px-4 footer-left">
+                    <a href="./index.html">
+                        <img src="./assets/img/cybersoft-logo-min.png" alt="logo-footer">
+                    </a>
+                    <p>CyberSoft Academy là học viện tiên phong tại Việt Nam áp dụng phương pháp đào tạo Active
+                        Learning và Flipped
+                        Learning thông qua các dự án thực tiễn trong lĩnh vực đào tạo CNTT. Học viên sẽ đóng vai trò là
+                        một Scrum member
+                        trong mô hình Agile để trở thành một lập trình chuyên nghiệp, đáp ứng mọi nhu cầu tuyển dụng
+                        của Doanh nghiệp
+                    </p>
+                </div>
+                <div class="col-md-3 col-12 px-4 footer-mid">
+                    <h4>THÔNG TIN</h4>
+                    <ul class="thongtin">
+                        <li><a href="./index.html">Trang chủ</a></li>
+                        <li><a href="./app/Views/layouts/gioithieu.html">Giới thiệu</a></li>
+                        <li><a href="./app/Views/layouts/danhsachkhoahoc.html">Danh sách khóa học</a></li>
+                        <li><a href="./app/Views/layouts/lienhe.html">Liên hệ</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-12 px-4 footer-right">
+                    <h4>LIÊN HỆ ĐỂ ĐƯỢC TƯ VẤN</h4>
+                    <ul class="thongtin">
+                        <li><span>Cơ sở 1 :</span> 459 Sư Vạn Hạnh, Quận 10 - HCM</li>
+                        <li><span>Cơ sở 2 :</span> 82 Ung Văn Khiêm, Quận Bình Thạnh (cuối đường D2 - gần ĐH HuTech) -
+                            HCM</li>
+                        <li>
+                            <span>T :</span>
+                            +84 961.05.10.14
+                        </li>
+                        <li>
+                            <span>E :</span> info@cybersoft.edu.vn
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- END FOOTER -->
+    <!-- Flie JQUERY -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <!-- Script validation -->
+    <script src="./assets/js/jquery.validate.min.js"></script>
+    <!-- File Owl-carousel -->
+    <script src="./assets/js/owl.carousel.min.js"></script>
+    <!-- File particles.min.js -->
+    <script src="./assets/Vendors/Particles/particles.min.js"></script>
+    <script src="./assets/Vendors/Particles/stats.js"></script>
+    <script src="./assets/Vendors/Particles/app.js"></script>
+    <!-- File JS -->
+    <script src="./assets/js/index.js"></script>
+    <!-- Script common -->
+    <script src="./assets/Vendors/common.js"></script>
+    <script src="./assets//Vendors/kiemtraForm.js"></script>
+    <script src="./assets/Vendors/jQueryNhapNhay/dist/js/NhapNhay.js"></script>
+    
+    <!-- Model Người Dùng & Khóa Học-->
+    <script src="./app/Models/nguoidung.js"></script>
+    <script src="./app/Models/danhsachnguoidung.js"></script>
+    <script src="./app/Models/khoahoc.js"></script>
+    <script src="./app/Models/danhsachkhoahoc.js"></script>
+    <!-- Service Người Dùng & Service Khóa Học -->
+    <script src="./app/Services/nguoidungService.js"></script>
+    <script src="./app/Services/khoahocService.js"></script>
+    <!-- Script SweetAlert -->
+    <script src="./assets/js/sweetalert.min.js"></script>
+    <!-- Script quản lý user HV -->
+    <script src="./app/Controllers/quanlyuser.js"></script>
+</body>
+
+</html>

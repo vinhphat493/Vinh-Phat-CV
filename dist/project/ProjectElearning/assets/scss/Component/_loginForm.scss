@@ -1,0 +1,169 @@
+#myModal{
+    .modal-dialog{
+        // width: 900px;
+        transform: translate(0,18%)    ;
+        -webkit-transform: translate(0,18%)    ;
+        -moz-transform: translate(0,18%)    ;
+        -ms-transform: translate(0,18%)    ;
+        -o-transform: translate(0,18%)    ;
+        
+        .row{
+            height: 450px;
+            .left{
+                position: relative;
+                padding: 0;
+                background-image: url("../img/picModal.jpg");
+                @extend .bgImg;
+                z-index: 10;
+                height: 100%;
+                @include MediaQuery(992px){
+                    display: none;
+                }
+                .bgOver{
+                    background-color: $colorDarkOp;
+                    height: 100%;
+                }
+                .inner{
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%,-50%)            ;
+                    -webkit-transform: translate(-50%,-50%)            ;
+                    -moz-transform: translate(-50%,-50%)            ;
+                    -ms-transform: translate(-50%,-50%)            ;
+                    -o-transform: translate(-50%,-50%)            ;
+                    width:80%;
+                    h3{
+                        color: $colorWhite;
+                        line-height: 45px;
+                    }
+                    .btnLeft{
+                        background-color: transparent;
+                        border: 1px solid $colorWhite;
+                        color: $colorWhite;
+                        &:hover{
+                            color: $colorHover;
+                        }
+                    }
+                }
+            }
+            .right{
+                position: relative;
+                padding: 0;
+                .closeModal{
+                    display: inline-block;
+                    padding: 0 $pd-1;
+                    background-color: $colorGray;
+                    font-size: $fs-3;
+                    position: absolute;
+                    right: 0;
+                    color: $colorDark;
+                    &:hover{
+                        color:$colorDarkOp;
+                    }
+                }
+                .inner{
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%,-50%)            ;
+                    -webkit-transform: translate(-50%,-50%)            ;
+                    -moz-transform: translate(-50%,-50%)            ;
+                    -ms-transform: translate(-50%,-50%)            ;
+                    -o-transform: translate(-50%,-50%)            ;
+                    width:80%;
+                    h2{
+                        text-align: center;
+                        margin-bottom: $mg-2;
+                    }
+                    .formQuenMK-content{
+                        padding : 0 $pd-2;
+                    }
+                    #divError{
+                        background-color: $bgLight;
+                        h5{
+                            color: $colorHover;
+                        }
+                    }
+                    .rightInput{
+                        height: 50px;
+                        background-color: transparent;
+                        margin-bottom: 40px;
+                        padding: $pd-05 $pd-1 $pd-05 $pd-1;
+                        border-radius: 10px                    ;
+                        -webkit-border-radius: 10px                    ;
+                        -moz-border-radius: 10px                    ;
+                        -ms-border-radius: 10px                    ;
+                        -o-border-radius: 10px                    ;
+                        border: 1px solid $colorDark;
+                        input{
+                            float: right;
+                            display: inline-block;
+                            border: 0!important;
+                            outline: 0!important;
+                            box-shadow: none;
+                            color :#2f2f2f;
+                            background-color: transparent;
+                            width: 90%;
+                        }
+                        span{
+                            display: inline-block;
+                            float: left;
+                            line-height: 37px;
+                            padding-left: $pd-05;
+                            font-size: 20px;
+                        }
+                        .error{
+                            display: inline-block;
+                            margin-top: 5px;
+                            color: $colorHover;
+                            font-size: 1rem;
+                        }
+
+                    }
+                    .divPassword{
+                        // margin-bottom: 35px;
+                    }
+                    #right-QuenMK{
+                        margin-left: $mg-2;
+                    }
+                    .rightFooterFirst{
+                        padding-top: 10px;
+                        @include MediaQuery(992px){
+                            display: block;
+                        }
+                    }
+                    .rightFooter{
+                        display: none;
+                        
+                        @include MediaQuery(992px){
+                            display: block!important;
+                        }
+                        .rightFooterRow{
+                            height: unset;
+                            .btnRespon{
+                                padding: $pd-1 $pd-20;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        #modalFooter{
+            display: none;
+            @include MediaQuery(992px){
+                display: block;
+                background-color: $colorAC
+            }
+            #signUpRespon{
+                background-color: transparent;
+                border:1px solid $colorDark;
+                color:$colorDark;
+                &:hover{
+                    color: $colorHover;
+                }
+            }
+        }
+    }
+}
+
