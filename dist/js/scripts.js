@@ -224,8 +224,8 @@ function isExists(elem) {
 
 var VIDEO_SRC = {
   FISHSAUCE: "images/projectFishSauce.mov",
-  GREATEASTERN: "images/projectGreatEastern",
-  CATERING: "images/projectCatering"
+  GREATEASTERN: "images/projectGreatEastern.mov",
+  CATERING: "images/projectCatering.mov"
 };
 var $btnModal = $(".js-onwork-link");
 var $modalWrapper = $(".js-modal-body");
@@ -242,10 +242,3 @@ $btnModal.click(function(ele) {
   </video>`;
   $modalWrapper.html(videoTag);
 });
-
-// $(window).click(function(ele) {
-//   var eleTarget = $(ele.target);
-//   if (eleTarget.hasClass("modal")) {
-//     $body.removeClass("modal-open");
-//   }
-// });
