@@ -453,9 +453,10 @@ b.max-bold {
 }
 
 .portfolio-section .p-item a {
-  display: inline-block;
+  display: inline-flex;
   position: relative;
   width: 100%;
+  min-height: 203px;
 }
 
 .portfolio-section .p-item a .img_overlay {
